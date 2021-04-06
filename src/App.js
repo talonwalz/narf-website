@@ -1,10 +1,27 @@
-
-import './App.css';
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      Talons website for NARF
+      <Header />
+      <div>space</div>
+      <div>space</div>
+      <div>space</div>
+      <div>space</div>
+      <div>space</div>
+      <div>space</div>
+      <div>space</div>
+      <div>space</div>
+      <div>space</div>
+      <div>space</div>
+      <div>space</div>
+      <div>space</div>
+      <div>space</div>
+      <div>space</div>
+      <div>space</div>
+      <Footer />
     </div>
   );
 }

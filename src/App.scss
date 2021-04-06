@@ -1,0 +1,15 @@
+@import 'scss/config';
+@import 'scss/buttons';
+@import 'scss/alerts';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+.App {
+  width: 100vw;
+  height: 100%;
+}
+

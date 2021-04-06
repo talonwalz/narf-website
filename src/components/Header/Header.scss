@@ -1,0 +1,142 @@
+$orangeColor: #E54817;
+$blueColor: #19818E;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    // background-color: #fff;
+    background-color: rgb(185, 177, 177);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 2px black solid;
+    // height: 80px;
+
+    img {
+        width: 25%;
+        height: auto;
+        margin-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    .middle {
+        font-size: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 70px;
+        height: 70px;
+    }
+
+    .right {
+        display: flex;
+        list-style: none;
+        font-size: 7px;
+        justify-content: space-between;
+        margin: 20px auto;
+        position: relative;
+        right: 0;
+        width: 35%;
+    
+        li {
+            // margin: auto 10px;
+            cursor: pointer;
+            border: 1px black solid;
+            border-radius: 5px;
+            margin: 0 auto;
+            padding: 5px;
+            height: 20px;
+            width: 60px;
+            text-align: center;
+
+            &:hover {
+                // color: $blueColor;
+                background-color: $blueColor;
+                scale: 2;
+            } 
+        }
+        
+        div {
+            display: none;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 820px) {
+    .header-container {
+        padding-top: 30px;
+        background-color: rgb(185, 177, 177);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        border-bottom: 2px black solid;
+        height: 100%;
+    
+        img {
+            width: 100%;
+            height: auto;
+            padding-right: 20px;
+        }
+    
+        .middle {
+            font-size: 18px;
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+        }
+    
+        .right {
+            // position: relative;
+            // bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            background-color: $blueColor;
+            width: 100%;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div {
+                width: 90%;
+                height: 35px;
+                border: 1px black solid;
+                border-radius: 5px;
+                background-color: $orangeColor;
+                display: flex;
+                align-items: center;
+            }
+            img {
+                padding: 5px;
+                height: 30px;
+                width: auto;
+            }
+            li {
+                display: none;
+            }
+    
+        }
+    }
+}
