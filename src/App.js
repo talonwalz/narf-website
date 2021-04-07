@@ -8,21 +8,7 @@ function App() {
     <div className="App">
       <Header />
       {routes}
-      <div>space</div>
-      <div>space</div>
-      <div>space</div>
-      <div>space</div>
-      <div>space</div>
-      <div>space</div>
-      <div>space</div>
-      <div>space</div>
-      <div>space</div>
-      <div>space</div>
-      <div>space</div>
-      <div>space</div>
-      <div>space</div>
-      <div>space</div>
-      <div>space</div>
+      
       <Footer />
     </div>
   );

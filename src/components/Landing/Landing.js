@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link}  from 'react-router-dom'
+import { Link }  from 'react-router-dom'
 
 const Landing = () => {
     return (
@@ -7,7 +7,7 @@ const Landing = () => {
         <div>
             I am the Landing component
         </div>
-        <Link to="/auth" ><p>Auth</p></Link>
+        {/* <Link to="/auth" ><p>Auth</p></Link> */}
         </>
     )
 }

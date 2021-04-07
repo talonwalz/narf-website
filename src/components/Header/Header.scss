@@ -35,6 +35,9 @@ $blueColor: #19818E;
         height: 70px;
     }
 
+    .hamburger-menu {
+        display: none;
+    }
     .right {
         display: flex;
         list-style: none;
@@ -63,9 +66,6 @@ $blueColor: #19818E;
             } 
         }
         
-        div {
-            display: none;
-        }
 
     }
 }
@@ -74,7 +74,19 @@ $blueColor: #19818E;
 
 
 
-
+@keyframes slide {
+    0%{
+        transform: translate(0, -40%);
+        opacity: .3;
+    }
+    70% {
+        opacity: .7;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
 
 
 
@@ -96,6 +108,7 @@ $blueColor: #19818E;
             width: 100%;
             height: auto;
             padding-right: 20px;
+            z-index: 3;
         }
     
         .middle {
@@ -106,11 +119,10 @@ $blueColor: #19818E;
             flex-direction: column;
             justify-content: space-evenly;
             height: 100%;
+            z-index: 3;
         }
-    
-        .right {
-            // position: relative;
-            // bottom: 0;
+
+        .hamburger-menu {
             padding-bottom: 0;
             margin-bottom: 0;
             background-color: $blueColor;
@@ -119,6 +131,8 @@ $blueColor: #19818E;
             display: flex;
             justify-content: center;
             align-items: center;
+            z-index: 3;
+
             div {
                 width: 90%;
                 height: 35px;
@@ -127,16 +141,40 @@ $blueColor: #19818E;
                 background-color: $orangeColor;
                 display: flex;
                 align-items: center;
+                z-index: 3;
             }
+
             img {
                 padding: 5px;
                 height: 30px;
                 width: auto;
             }
+        }
+
+        .right {
+            display: none;  
+            // animation: slide;
+            // animation-duration: 1s;    
+        }
+
+        .dropdown {
+            animation-name: slide;
+            animation-duration: 1s;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            background-color: $blueColor;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
             li {
-                display: none;
+                list-style: none;
             }
-    
         }
     }
 }
+
+

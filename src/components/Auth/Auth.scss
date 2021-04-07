@@ -1,0 +1,48 @@
+.auth-container {
+    height: 100%;
+    width: 100vw;
+    background-color: white;
+    text-align: center;
+    margin: 30px auto;
+    
+    p {
+        font-size: 20px;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        
+
+        input {
+            height: 50px;
+            width: 200px;
+            font-size: 20px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 200px;
+
+            button {
+                height: 30px;
+                width: 80px;
+
+                &:hover {
+                    background-color: darkgray;
+                }
+            }
+        }
+
+        img {
+            height: 100px;
+            width: auto;
+        }
+    }
+}
