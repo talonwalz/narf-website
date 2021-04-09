@@ -1,0 +1,47 @@
+$orangeColor: #E54817;
+$blueColor: #19818E;
+
+.admin-container {
+    background-color: #c8f5fc;
+    text-align: center;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: center;
+    // height: 1000px;
+
+    div {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+
+.review {
+    border: 1px black solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(92, 89, 89);
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 4px 8px;
+    margin: 8px;
+    background-color: rgb(235, 225, 225);
+
+    h4, p {
+        text-align: left;
+    }
+
+    div {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    button {
+        width: 60px;
+    }
+}
+}

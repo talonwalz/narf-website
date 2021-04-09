@@ -14,7 +14,7 @@ module.exports = {
         const hash = bcrypt.hashSync(password, salt);
 
         const [ newUser ] = await db.Auth.register_user(username, hash);
-        delete newUser.hash;
+        delete newUser.password;
 
         req.session.user = newUser;
 

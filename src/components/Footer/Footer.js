@@ -10,10 +10,10 @@ const Footer = () => {
         <header className="footer-container">
         <ul className="left">
                 <Link to="/"><li>HOME</li></Link>
-                <Link><li>OUR TEAM</li></Link>
-                <Link><li>SERVICES</li></Link>
-                <Link><li>NEW PATIENT</li></Link>
-                <Link><li>CONTACT US</li></Link>
+                <Link to="/our-team"><li>OUR TEAM</li></Link>
+                <Link to="/our-services"><li>SERVICES</li></Link>
+                <Link to="/new-patient"><li>NEW PATIENT</li></Link>
+                <Link to="/contact-us"><li>CONTACT US</li></Link>
                 <Link to="/auth" ><li>LOGIN</li></Link>
             </ul>   
             

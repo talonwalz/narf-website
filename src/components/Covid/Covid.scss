@@ -1,0 +1,25 @@
+$orangeColor: #E54817;
+$blueColor: #19818E;
+
+.covid-container {
+    padding: 20px 80px;
+    width: 70%;
+    h3, h4 {
+        color: $blueColor
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .covid-container {
+        width: 100%;
+        padding: 20px 40px;
+
+        p {
+            font-size: 18px;;
+        }
+    }
+}

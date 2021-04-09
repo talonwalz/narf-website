@@ -14,11 +14,21 @@ const Auth = (props) => {
         axios.post('/auth/login', {username, password})
         .then(res => {
             props.updateUser(res.data)
-            console.log(username, password)
+            props.history.push('/admin')
             console.log(res.data)
         })
         .catch(err => console.log(err))
     }  
+
+    function registerUser() {
+        axios.post('/auth/register', {username, password})
+        .then(res => {
+            props.updateUser(res.data)
+            props.history.push('/admin')
+            console.log(res.data)
+        })
+        .catch(err => console.log(err))
+    }
 
     function logoutUser() {
         axios.delete('/auth/logout')
@@ -31,7 +41,7 @@ const Auth = (props) => {
 
 
     return (
-        
+       
         <section className="auth-container">
             <p>Must be an employee to login</p>
             <div>
@@ -40,6 +50,7 @@ const Auth = (props) => {
             <div>
             <button onClick={loginUser}>Login</button>
             <button onClick={logoutUser}>Logout</button>
+            <button onClick={registerUser}>Register</button>
             </div>
             <img src={image} alt="NARF logo"/>
             </div>

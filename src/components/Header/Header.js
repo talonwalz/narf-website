@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import image from '../../images/logoIcon.png'
+import { Link } from 'react-router-dom'
 import './Header.scss'
 
 const Header = () => {
@@ -20,11 +21,11 @@ const Header = () => {
                 </div>
             </section>
             <ul className={ menu ? "dropdown" : "right" }>          
-                <li>HOME</li>
-                <li>OUR TEAM</li>
-                <li>SERVICES</li>
-                <li>NEW PATIENT</li>
-                <li>CONTACT US</li>       
+                <Link to="/"><li>HOME</li></Link>
+                <Link to="/our-team"><li>OUR TEAM</li></Link>
+                <Link to="/our-services"><li>SERVICES</li></Link>
+                <Link to="/new-patient"><li>NEW PATIENT</li></Link>
+                <Link to="/contact-us"><li>CONTACT US</li></Link>      
             </ul>          
         </header>
         </>

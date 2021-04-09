@@ -8,9 +8,10 @@ module.exports = {
 
     addFeedback: async (req, res) => {
         const db = await req.app.get('db');
-        const { first_name, last_name, feedback } = req.body
+        const { first, last, feedback } = req.body
+        console.log(req.body)
 
-        await db.Feedback.add_feedback(first_name, last_name, feedback)
+        await db.Feedback.add_feedback(first, last, feedback)
         res.sendStatus(200)
     },
 
