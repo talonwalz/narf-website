@@ -12,7 +12,35 @@ $blueColor: #19818E;
     // z-index: -5;
     // width: 100vw;
     // height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    // margin: 25px;
     
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 25%;
+        height: 140px;
+        padding: 20px;
+
+        button {
+            width: 200px;
+            height: auto;
+        }
+    }
+    .mission {
+        width: 75%;
+        padding: 20px; 
+
+        h1 {
+            text-align: center;
+            font-style: italic;
+            font-size: 30px;
+        }
+    }
 }
 
 @media (max-width: 450px) {

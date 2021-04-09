@@ -1,0 +1,25 @@
+
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        width: 30%;
+        height: auto;
+    }
+
+    section {
+        padding: 20px;
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            padding: 0 30px;
+        }
+    }
+}

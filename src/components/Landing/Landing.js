@@ -6,14 +6,19 @@ import { Link }  from 'react-router-dom'
 
 const Landing = () => {
     return (
-        <section className="landing-container">
-            <div>
+        <main>
+            <section className="landing-container">
+                <div className="links">
                 <Link to="/patient-feedback"><button>Give Feedback</button></Link>
                 <Link to="/covid-info"><button>Covid Updates</button></Link>
                 <Link to="/contact-us"><button>Contact Us</button></Link>
                 </div>
-                <About />
-        </section>
+                <div className="mission">
+                <h1>Empowering our community one person at a time.</h1>
+                </div>
+            </section>
+            <About />
+        </main>
         
         
     )
