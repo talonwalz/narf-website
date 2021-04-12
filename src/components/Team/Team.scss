@@ -1,3 +1,6 @@
+$orangeColor: #E54817;
+$blueColor: #19818E;
+
 .team-container {
     display: flex;
     flex-direction: column;
@@ -19,7 +22,11 @@
         // box-shadow: 0px 0px 4px 2px  gray;
 
         p {
-font-size: 11px;
+            font-size: 11px;
+        }
+
+        h4 {
+            color: $blueColor
         }
     }
 

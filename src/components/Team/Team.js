@@ -7,7 +7,7 @@ const Team = () => {
     return (
         <main className="team-container">
             <section className="person">
-            <img src={tarrin}/>
+            <img src={tarrin} alt="Tarrin Walz"/>
             <div>
                 <h4>Tarrin Walz, PT, MS / Owner</h4>
                 <br/>
@@ -20,7 +20,7 @@ const Team = () => {
             </div>    
             </section>
             <section className="person">
-            <img src={dan}/>
+            <img src={dan} alt="Dan Sorenson"/>
             <div>
                 <h4>Dan Sorenson, PT, MPT</h4>
                 <br/>
@@ -32,7 +32,7 @@ const Team = () => {
             </div>  
             </section>
             <section className="person">
-            <img />
+            <img alt="Dawn Rossi"/>
             <div >
                 <h4>Dawn Rossi PTA</h4>
                 <br/>

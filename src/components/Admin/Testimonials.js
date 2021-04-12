@@ -7,7 +7,7 @@ const Testimonials = (props) => {
     const [ post, setPost ] = useState('')
     const [ testimonials, setTestimonials ] = useState([])
 
-    // dependency on this?
+    // dependency on this? 
     useEffect(() => {
         axios.get('/api/testimonials')
         .then(res => {
@@ -46,7 +46,7 @@ const Testimonials = (props) => {
 
     return (
         <section className="testimonial-container">
-            <input placeholder="Add testimonial" onChange={e=>setPost(e.target.value)}/>
+            <textarea type="text" placeholder="Add testimonial" onChange={e=>setPost(e.target.value)}/>
             <div className="btn-div">
             <button onClick={addTestimonial}>Submit</button>
             </div>

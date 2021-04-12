@@ -1,0 +1,46 @@
+$orangeColor: #E54817;
+$blueColor: #19818E;
+
+.services-container {
+    height: 100%;
+    text-align: center;
+    margin-top: 20px;
+
+    h2 {
+        color: $blueColor
+    }
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: space-evenly;
+    width: auto;
+    text-align: center;
+    padding: 10px 25px;
+
+    ul {
+        display: none;
+    }
+
+    img {
+        width: 200px;
+        height: 135px;
+        border: 2px black solid;
+        border-radius: 5px;
+        &:hover {
+            border: 3px solid black;
+        }
+    }
+
+    h4 {
+        color: $blueColor
+    }
+
+    article {
+        margin-top: 5px;
+    }
+}
+
+

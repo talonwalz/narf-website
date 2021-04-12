@@ -6,8 +6,9 @@
 
 .footer-container {
 
-    background-color: rgb(185, 177, 177);
-    // color: #fff;
+    // background-color: rgb(185, 177, 177);
+    background-color: rgb(82, 79, 79); 
+    color: #fff;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -16,7 +17,7 @@
     border-top: 2px black solid;
     border-bottom: 2px black solid;
     height: 120px;
-
+    // bottom: 0;
 
     .left {
         display: flex;
@@ -26,14 +27,19 @@
         width: 30%;
         align-items: center;
         justify-content: space-between;
+        
 
         li {
             // border-bottom: 1px black solid;
+            color: #fff;
+            border: 1px transparent solid;
+            border-radius: 5px;
+            padding: 2px;
 
             &:hover {
-                border: 1px solid black;
+                border: 1px solid white;
                 border-radius: 5px;
-                padding: 4px;
+                padding: 2px;
                 cursor: pointer;
             }
         }
@@ -55,14 +61,27 @@
     .right{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         width: 33%;
         align-items: center;
-    
 
+
+        div {
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+            margin: 10px;
+            position: relative;
+            left: 15px;
+        }
+    
+        .footer-logo {
+            width: 80%;
+            height: auto;
+        }
         img {
-            width: 20%;
+            width: 60%;
             height: auto;
         }
 

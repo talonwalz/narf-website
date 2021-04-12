@@ -8,14 +8,14 @@ $blueColor: #19818E;
 }
 
 .header-container {
-    // background-color: #fff;
-    background-color: rgb(185, 177, 177);
+    background-color: #fff;
+    // background-color: rgb(185, 177, 177);
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 5px 0;
     position: relative;
-    border-bottom: 2px black solid;
+    // border-bottom: 2px black solid;
     // height: 80px;
 
     img {
@@ -26,49 +26,71 @@ $blueColor: #19818E;
     }
 
     .middle {
-        font-size: 10px;
+        font-size: 12px;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         padding: 0 70px;
         height: 70px;
+
+        p {
+            color: $blueColor;
+            font-weight: bold;
+        }
     }
 
     .hamburger-menu {
         display: none;
     }
-    .right {
-        display: flex;
-        list-style: none;
-        font-size: 7px;
-        justify-content: space-between;
-        margin: 20px auto;
-        position: relative;
-        right: 0;
-        width: 35%;
-    
-        li {
-            // margin: auto 10px;
-            cursor: pointer;
-            border: 1px black solid;
-            border-radius: 5px;
-            margin: 0 auto;
-            padding: 5px;
-            height: 20px;
-            width: 60px;
-            text-align: center;
-
-            &:hover {
-                // color: $blueColor;
-                background-color: $blueColor;
-                scale: 2;
-            } 
-        }
-        
-
-    }
 }
+
+.right {
+       
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        margin: 0 25px;
+        
+        .links {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-size: 10px;
+    
+            button {
+                width: 150px;
+                height: 20px;
+                margin-top: 5px;
+                border-radius: 5px;
+                border: 2px black solid;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $blueColor;
+                    color: #fff;
+                }
+            }
+
+            .btn-1, .btn-2 {
+                background-color: lighten($blueColor, 10%);
+            }
+
+            .btn-3 {
+                background-color: orangered;
+
+                &:hover {
+                    background-color: $orangeColor;
+                }
+            }
+        }
+
+}
+
+
+
 
 
 

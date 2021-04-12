@@ -6,7 +6,7 @@ import './About.scss'
 const About = () => {
     return (
         <main className="about-container"> 
-            <img src={logo}/>
+            <img src={logo} alt="logo" />
             <section>
                 <h2>To promote, enhance, and facilitate the quality of life and the recovery of normal movement for our patients through skilled therapeutic intervention.</h2>
                 <br/>
