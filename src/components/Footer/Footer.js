@@ -28,12 +28,11 @@ const Footer = () => {
             <article className="right">
                 <img className="footer-logo" src={image} alt="NARF logo"/>    
                 <div>
-                    <a href="https://www.facebook.com/norazrehab" target="_blank"><img className="fb" src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="facebook link"/></a>
-                    <a href={googleReview} target="_blank"><img src="https://img.icons8.com/fluent/48/000000/google-logo.png"/></a>
+                    <a href="https://www.facebook.com/norazrehab" target="_blank" rel="noopener noreferrer"><img className="fb" src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="facebook link"/></a>
+                    <a href={googleReview} target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/48/000000/google-logo.png" alt="google review link"/></a>
                 </div>
             </article>   
-        </header>
-        
+        </header>        
     )
 }
 

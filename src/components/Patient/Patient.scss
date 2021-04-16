@@ -1,0 +1,23 @@
+
+
+.patient-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+    img {
+        width: 30%;
+        height: auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        border: 1px black solid;
+        border-radius: 5px;
+        padding: 2px;
+        background-color: blue;
+    }
+}

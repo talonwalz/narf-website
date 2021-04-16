@@ -8,6 +8,7 @@ import Feedback from './components/Feedback/Feedback'
 import Patient from './components/Patient/Patient'
 import Services from './components/Services/Services'
 import Team from './components/Team/Team'
+import SuccessStories from './components/SuccessStories/SuccessStories'
 
 export default (
     <Switch>
@@ -20,6 +21,8 @@ export default (
         <Route path="/patient-feedback" component={Feedback}/>
         <Route path="/admin" component={Admin}/>
         <Route path="/covid-info" component={Covid}/>
+        <Route path="/success-stories" component={SuccessStories}/>
+
         
     </Switch>
 )

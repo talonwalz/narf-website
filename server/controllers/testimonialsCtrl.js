@@ -10,25 +10,25 @@ module.exports = {
         const { post } = req.body;
         const { employee_id } = req.session.user;
 
-        await db.Testimonials.add_testimonial(employee_id, post)
+        const testimonials = await db.Testimonials.add_testimonial(employee_id, post)
 
-        res.sendStatus(200)
+        res.status(200).send(testimonials)
     },
     editTestimonial: async (req, res) => {
         const db = req.app.get('db');
-        const { post } = req.body;
+        const { updatePost } = req.body;
         const { post_id } = req.params;
 
-        await db.Testimonials.edit_testimonial(post_id, post)
+        const testimonials = await db.Testimonials.edit_testimonial(post_id, updatePost)
         
-        res.sendStatus(200)
+        res.status(200).send(testimonials)
     },
     deleteTestimonial: async (req, res) => {
         const db = req.app.get('db');
         const { post_id } = req.params;
 
-        await db.Testimonials.delete_testimonial(post_id)
+        const testimonials = await db.Testimonials.delete_testimonial(post_id)
 
-        res.sendStatus(200)
+        res.status(200).send(testimonials)
     },
 }

@@ -29,3 +29,9 @@ CREATE TABLE questions (
     phone_number INT NOT NULL,
     question TEXT NOT NULL
 );
+
+ALTER TABLE questions
+ADD COLUMN date TEXT NOT NULL;
+
+ALTER TABLE questions
+ALTER COLUMN phone_number TYPE VARCHAR(12);

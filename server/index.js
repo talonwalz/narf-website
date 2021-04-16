@@ -9,6 +9,7 @@ const { SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env;
 const authCtrl = require('./controllers/authCtrl');
 const feedbackCtrl = require('./controllers/feedbackCtrl');
 const testimonialsCtrl = require('./controllers/testimonialsCtrl');
+const requestCtrl = require('./controllers/requestInfoCtrl')
 
 app.use(express.json());
 
@@ -37,6 +38,11 @@ app.get('/api/testimonials', testimonialsCtrl.getTestimonials); //endpoint check
 app.post('/api/testimonials', testimonialsCtrl.addTestimonial); //endpoint checked :)
 app.put('/api/testimonials/:post_id', testimonialsCtrl.editTestimonial); //endpoint checked :)
 app.delete('/api/testimonials/:post_id', testimonialsCtrl.deleteTestimonial); //endpoint checked :)
+
+// RequestInfo Endpoints
+app.post('/api/request-info', requestCtrl.addRequest) //endpoint checked :)
+app.get('/api/request-info', requestCtrl.getRequests) //endpoint checked :)
+app.delete('/api/request-info/:question_id', requestCtrl.deleteRequest) //endpoint checked :)
 
 
 

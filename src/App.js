@@ -4,8 +4,8 @@ import axios from 'axios'
 import routes from './Routes'
 import { updateUser } from './Redux/reducers/userReducer'
 import { connect } from 'react-redux'
-import './App.scss';
 import { Component } from 'react';
+import './App.scss';
 
 class App extends Component {
 
@@ -22,7 +22,6 @@ class App extends Component {
       <div className="App">
         <Header />
         {routes}
-      
         <Footer />
       </div>
     );

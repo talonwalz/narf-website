@@ -13,7 +13,7 @@ const Nav = () => {
                 <Link to="/our-team" style={{textDecoration: "none"}}><li>OUR TEAM</li></Link>
                 <Link to="/our-services" style={{textDecoration: "none"}}><li>SERVICES</li></Link>
                 <Link to="/new-patient" style={{textDecoration: "none"}}><li>NEW PATIENT</li></Link>
-                <Link to="/contact-us" style={{textDecoration: "none"}}><li>CONTACT US</li></Link>      
+                <Link to="/success-stories" style={{textDecoration: "none"}}><li>SUCCESS STORIES</li></Link>      
             </ul>  
         </section>
     )

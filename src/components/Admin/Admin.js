@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import axios from 'axios'
 import { connect } from 'react-redux'
 import { updateFeedback } from '../../Redux/reducers/feedbackReducer'
@@ -9,12 +9,14 @@ import './Admin.scss'
 
 
 const Admin = (props) => {
-    console.log(props)
+
+    
 
     useEffect(() => {
         const {userReducer,history} = props
         if (!userReducer.user) {
             history.push('/')
+            
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
@@ -41,13 +43,13 @@ const Admin = (props) => {
     function deleteFeedback(id) {
         axios.delete(`/api/feedback/${id}`)
         .then(res => {
-            alert('Feedback deleted')
-            // need to delete from redux state
-            // delete props.feedbackReducer.feedback
+            // alert('Feedback deleted')
+            props.updateFeedback(res.data)
+            
         })
         .catch(err => console.log(err))
     }
-
+    
     const mappedFeedback = props.feedbackReducer.feedback.map((e) => {
         return (
             <article className="reviw" key={e.feedback_id}>
@@ -69,6 +71,7 @@ const Admin = (props) => {
             <div>
             <button onClick={logoutUser}>Logout</button>
             </div>
+            <h2>Feedback</h2>
             <div className="review">
             {mappedFeedback}
             </div>

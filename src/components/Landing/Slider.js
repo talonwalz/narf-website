@@ -1,37 +1,34 @@
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import knee from '../../images/Narf/knee-pain.jpg'
-import hip from '../../images/Narf/hip-pain.jpg'
-import neck from '../../images/Narf/neck-pain.jpeg'
-import shoulder from '../../images/Narf/shoulder-pain.png'
-import back from '../../images/Narf/sciatica-and-back-pain.jpeg'
+import tanner from '../../images/Narf/tanner.jpeg'
+import gym from '../../images/Narf/gym.jpeg'
+import pool from '../../images/Narf/pool.jpeg'
 import buildingImg from '../../images/building.jpg'
-
-
+import gymPic from '../../images/Narf/gymabove.jpeg'
 import React, {Component} from 'react'
 import Slider from 'react-slick'
 import './Slider.scss'
 
 const photos = [
     {
-        name: `hip`,
+        name: `front of building`,
         url: buildingImg
     },
     {
-        name: `knee`,
-        url: knee
+        name: `gym picture`,
+        url: gymPic
     },
     {
-        name: `neck`,
-        url: neck
+        name: `tanner`,
+        url: tanner
     },
     {
-        name: `shoulder`,
-        url: shoulder
+        name: `gym`,
+        url: gym
     },
     {
-        name: `back`,
-        url: back
+        name: `pool`,
+        url: pool
     }
 ]
 
@@ -46,18 +43,20 @@ class Carousel extends Component {
             arrows: true,
             slidesToScroll: 1,
             className: 'slides',
-            // autoplay: true,
-            autoplaySpeed: 2500
+            autoplay: true,
+            autoplaySpeed: 4000,
+            adaptiveHeight: true,
+            pauseOnHover: true
 
         }
         return (
             <main className="slider-container">
             <section className="slider">
                 <Slider {...settings}>
-                    {photos.map((photo) => {
+                    {photos.map((photo, i) => {
                         return (
-                            <div className="slide" >
-                                <img width="100%" src={photo.url} alt="big car"/>
+                            <div key={i} className="slide" >
+                                <img width="100%" src={photo.url} alt={photo.name}/>
                             </div>
                         )
                     })}

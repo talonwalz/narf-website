@@ -9,10 +9,24 @@ const Auth = (props) => {
 
     const [ username, setUsername ] = useState('')
     const [ password, setPassword ] = useState('')
+    const [ admin, setAdmin ] = useState(false)
+
+    useEffect(() => {
+        const {userReducer} = props
+        if (userReducer.user) {
+            setAdmin(true)   
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
     function loginUser() {
+        const {userReducer,history} = props
+            if (userReducer.user) {
+                history.push('/admin')
+            } 
         axios.post('/auth/login', {username, password})
         .then(res => {
+            
             props.updateUser(res.data)
             props.history.push('/admin')
             console.log(res.data)
@@ -50,7 +64,7 @@ const Auth = (props) => {
             <div>
             <button onClick={loginUser}>Login</button>
             <button onClick={logoutUser}>Logout</button>
-            <button onClick={registerUser}>Register</button>
+            {admin ? <button onClick={registerUser}>Register</button> : null }
             </div>
             <img src={image} alt="NARF logo"/>
             </div>

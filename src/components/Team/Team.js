@@ -1,13 +1,15 @@
 import React from 'react'
 import tarrin from '../../images/tarrin.JPG'
-import dan from '../../images/dan.JPG'
+// import dan from '../../images/dan.JPG'
+import dan2 from '../../images/dan2.jpg'
+import dawn from '../../images/dawn.jpg'
 import './Team.scss'
 
 const Team = () => {
     return (
         <main className="team-container">
             <section className="person">
-            <img src={tarrin} alt="Tarrin Walz"/>
+            <img classname="image1" src={tarrin} alt="Tarrin Walz"/>
             <div>
                 <h4>Tarrin Walz, PT, MS / Owner</h4>
                 <br/>
@@ -20,7 +22,7 @@ const Team = () => {
             </div>    
             </section>
             <section className="person">
-            <img src={dan} alt="Dan Sorenson"/>
+            <img src={dan2} alt="Dan Sorenson"/>
             <div>
                 <h4>Dan Sorenson, PT, MPT</h4>
                 <br/>
@@ -32,7 +34,7 @@ const Team = () => {
             </div>  
             </section>
             <section className="person">
-            <img alt="Dawn Rossi"/>
+            <img src={dawn} alt="Dawn Rossi"/>
             <div >
                 <h4>Dawn Rossi PTA</h4>
                 <br/>
