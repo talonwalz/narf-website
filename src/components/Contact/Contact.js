@@ -1,31 +1,40 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect } from 'react'
 import './Contact.scss'
 import image from '../../images/logoIcon.png'
 import axios from 'axios'
 
 
 const Contact = () => {
-    const [ date, setDate ] = useState('')
+    const [ date, setDate ] = useState(new Date().toDateString())
     const [ first, setFirst ] = useState('')
     const [ last, setLast ] = useState('')
     const [ phone, setPhone ] = useState('')
-    const [ question, setQuestion ] = useState('')
+    const [ message, setMessage ] = useState('')
+    const [ email, setEmail ] = useState('')
+        
 
     function addRequest() {
-        // why wont this run first??
-        setDate(new Date())
         if(first.length < 5) {
             alert('this is too short')
         } else {
 
-            axios.post('/api/request-info', { first, last, phone, question, date})
+            axios.post('/api/email-us', { first, message, email, last, date})
+            .then(res => console.log(res.data))
+
+            axios.post('/api/email-from-us', { email, last, date})
+
+            axios.post('/api/request-info', { first, last, phone, message, date})
             .then(res => {
                 setFirst('')
                 setLast('')
                 setPhone('')
-                setQuestion('')
+                setMessage('')
+                setEmail('')
                 console.log(res.data)
             })
+            .catch(err => console.log(err))
+
+            
         }
     }
 
@@ -70,19 +79,21 @@ const Contact = () => {
                 <h5>Request an Appointment</h5>
                 <div>
 
-                    <label></label>
+                    {/* <label>First: </label> */}
                     <input placeholder="first name" value={first}onChange={e => setFirst(e.target.value)}/>
-                    <label></label>
+                    {/* <label>Last: </label> */}
                     <input placeholder="last name" value={last} onChange={e => setLast(e.target.value)}/>
                 </div>
                 <div>
                     {/* <label htmlFor="tel">ex: 928-649-9726</label> */}
+                    {/* <label>Phone #: </label> */}
                     <input placeholder="phone number" type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value={phone} onChange={e => setPhone(e.target.value)} required minLength={9}/>
-                    <label></label>
-                    <input  placeholder="date" value={date} onChange={e=>setDate(e.target.value)}/>
+                    {/* <label>email: </label> */}
+                    <input  type="email" placeholder="email" value={email} onChange={e=>setEmail(e.target.value)}/> 
+                    <input  type="hidden" placeholder="date" value={date} onChange={e=>setDate(e.target.value)}/>
                 </div>     
-                <label></label>          
-                <textarea placeholder="message" value={question} onChange={e => setQuestion(e.target.value)}></textarea>
+                {/* <label>Message: </label>           */}
+                <textarea placeholder="message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
                 <button onClick={addRequest}>Submit</button>
             </form>
             </section>

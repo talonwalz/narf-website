@@ -10,6 +10,7 @@ const authCtrl = require('./controllers/authCtrl');
 const feedbackCtrl = require('./controllers/feedbackCtrl');
 const testimonialsCtrl = require('./controllers/testimonialsCtrl');
 const requestCtrl = require('./controllers/requestInfoCtrl')
+const emailCtrl = require('./controllers/nodemailerCtrl')
 
 app.use(express.json());
 
@@ -40,10 +41,13 @@ app.put('/api/testimonials/:post_id', testimonialsCtrl.editTestimonial); //endpo
 app.delete('/api/testimonials/:post_id', testimonialsCtrl.deleteTestimonial); //endpoint checked :)
 
 // RequestInfo Endpoints
-app.post('/api/request-info', requestCtrl.addRequest) //endpoint checked :)
-app.get('/api/request-info', requestCtrl.getRequests) //endpoint checked :)
-app.delete('/api/request-info/:question_id', requestCtrl.deleteRequest) //endpoint checked :)
+app.post('/api/request-info', requestCtrl.addRequest); //endpoint checked :)
+app.get('/api/request-info', requestCtrl.getRequests); //endpoint checked :)
+app.delete('/api/request-info/:question_id', requestCtrl.deleteRequest); //endpoint checked :)
 
+// NodeMailer Endpoint
+app.post('/api/email-from-us',emailCtrl.emailFromUs); //endpoint checked :)
+app.post('/api/email-us',emailCtrl.emailUs); //endpoint checked :)
 
 
 massive({
