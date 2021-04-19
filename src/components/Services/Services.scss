@@ -5,23 +5,29 @@ $blueColor: #19818E;
     height: 100%;
     text-align: center;
     margin-top: 20px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     h2 {
         color: $blueColor
     }
 }
 
-.image-container {
+.symptoms-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: center;
     flex-wrap: wrap;
-    align-items: space-evenly;
-    width: auto;
-    text-align: center;
-    padding: 10px 25px;
+    width: 70%;
+    text-align: left;
+    padding: 20px 40px;
+    border: 2px black solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
 
-    ul {
-        display: none;
+    li {
+        padding: 3px;
     }
 
     img {
@@ -41,6 +47,76 @@ $blueColor: #19818E;
     article {
         margin-top: 5px;
     }
+
 }
 
+
+
+.treatment-container {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    text-align: left;
+    padding: 20px 40px;
+    border: 2px black solid;
+    border-radius: 5px;
+
+    li {
+        padding: 3px;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .symptoms-container {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 70%;
+        text-align: left;
+        padding: 20px 40px;
+        border: 2px black solid;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    
+        li {
+            padding: 3px;
+            font-size: 18px;
+        }
+    
+        
+    
+        h4 {
+            color: $blueColor
+        }
+    
+        article {
+            margin-top: 5px;
+        }
+    
+    }
+
+    .treatment-container {
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 70%;
+        text-align: left;
+        padding: 20px 40px;
+        border: 2px black solid;
+        border-radius: 5px;
+    
+        li {
+            padding: 3px;
+            font-size: 18px;
+        }
+    }
+}
 

@@ -31,12 +31,12 @@ const Feedback = (props) => {
             <h2>What Can We Do Better?</h2>
             <main >
                 <div>
-                <input value={first} onChange={e => setFirst(e.target.value)} placeholder="first name" />
-                <input value={last} onChange={e => setLast(e.target.value)} placeholder="last name"/>
+                    <input value={first} onChange={e => setFirst(e.target.value)} placeholder="first name" />
+                    <input value={last} onChange={e => setLast(e.target.value)} placeholder="last name"/>
                 </div>
                 <textarea value={feedback} onChange={e => setFeedback(e.target.value)} placeholder="feedback"/>
                 <div className="btn-div">
-                <button onClick={addFeedback}>Submit</button>
+                    <button onClick={addFeedback}>Submit</button>
                 </div>
                 <img src={image} alt="narf logo"/>
 

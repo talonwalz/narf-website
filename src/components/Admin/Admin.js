@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import axios from 'axios'
 import { connect } from 'react-redux'
 import { updateFeedback } from '../../Redux/reducers/feedbackReducer'
-import { logoutUser } from '../../Redux/reducers/userReducer'
+import userReducer, { logoutUser } from '../../Redux/reducers/userReducer'
 import Testimonials from './Testimonials'
 import './Admin.scss'
 
@@ -52,7 +52,7 @@ const Admin = (props) => {
     
     const mappedFeedback = props.feedbackReducer.feedback.map((e) => {
         return (
-            <article className="reviw" key={e.feedback_id}>
+            <article className="review" key={e.feedback_id}>
                 <h4> - {e.first_name} {e.last_name}</h4>
                 <p>{e.feedback}</p>
                 <div>
@@ -65,19 +65,17 @@ const Admin = (props) => {
 
     return (
         <section className="admin-container">
-            {/* <p>Welcome {props.userReducer.user.username}</p> */}
-            {/* <button onClick={getFeedback}>Get Feedback</button> */}
-            {/* {props.feedbackReducer.feedback[0].feedback} */}
+            {props.userReducer.user ? <h4>Welcome {props.userReducer.user.username}</h4> : null }
             <div>
-            <button onClick={logoutUser}>Logout</button>
+                <button onClick={logoutUser}>Logout</button>
             </div>
-            <h2>Feedback</h2>
-            <div className="review">
-            {mappedFeedback}
-            </div>
-            <Testimonials />
-            
-            
+            <article className="feedback">
+                <h2>Feedback</h2>
+                <div className="reviw">
+                    {mappedFeedback}
+                </div>
+            </article>
+            <Testimonials />            
         </section>
     )
 }

@@ -26,7 +26,7 @@ const Footer = () => {
                 <p>(928) 649-9726</p>
             </section>
             <article className="right">
-                <img className="footer-logo" src={image} alt="NARF logo"/>    
+                <Link to="/" style={{textDecoration: "none"}}><img className="footer-logo" src={image} alt="NARF logo"/></Link>  
                 <div>
                     <a href="https://www.facebook.com/norazrehab" target="_blank" rel="noopener noreferrer"><img className="fb" src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="facebook link"/></a>
                     <a href={googleReview} target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/48/000000/google-logo.png" alt="google review link"/></a>

@@ -58,21 +58,21 @@ const Testimonials = (props) => {
             <article className="post" key={t.post_id}>
                 { edit ? (<textarea type="text" onChange={e=>setUpdatePost(e.target.value)}></textarea>) : null }
                 <p>{t.post}</p>
+                <div>
                 {edit ? <button onClick={()=> editTestimonial(t.post_id)}>Update</button> :<button onClick={()=> deleteTestimonial(t.post_id)}>Delete</button> }
                 <button onClick={()=> setEdit(!edit)}>Edit</button>
-
+                </div>
             </article>
         )
     })
 
     return (
         <section className="testimonial-container">
-            
+            <h2>Testimonials</h2>
             <textarea type="text" value={post} placeholder="Add testimonial" onChange={e=>setPost(e.target.value)}/>
             <div className="btn-div">
             <button onClick={addTestimonial}>Submit</button>
             </div>
-            <h2>Testimonials</h2>
             {mappedTestimonials}     
         </section>
     )

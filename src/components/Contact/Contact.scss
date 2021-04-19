@@ -4,7 +4,6 @@ $blueColor: #19818E;
 .contact {
 
     
-    margin: 20px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -12,7 +11,7 @@ $blueColor: #19818E;
 
     h2 {
         text-align: center;
-        // color: $blueColor
+        margin-top: 20px;
     }
     img {
         width: 20%;
@@ -24,8 +23,7 @@ $blueColor: #19818E;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 20px 50px;
-    // width: 100%;
+    margin: 10px 50px;
     text-align: center;
 }
 
@@ -36,23 +34,36 @@ $blueColor: #19818E;
     justify-content: space-evenly;
     border: 2px black solid;
     border-radius: 5px;
-    padding: 10px 30px;
-    // background-color: $blueColor;
+    padding: 20px 30px;
     color: $blueColor;
+    margin-top: 20px;
+
+    h2 {
+        color: black;
+        margin-bottom: 10px;
+    }
 }
 
 .hours {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     border: 2px black solid;
     border-radius: 5px;
     padding: 10px 30px;
-    // background-color: $blueColor;
     margin-top: 20px;
 
+    section {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 30px;
+        
+    }
+
     div {
-        margin: 5px 10px;
+        margin: 10px;
         color: $blueColor
 
     }
@@ -68,17 +79,49 @@ $blueColor: #19818E;
     padding: 10px 30px;
     margin-top: 20px;
 
-    h5 {
+    .input-box {
+        display: flex;
+        
+    }
+
+    h2 {
         text-align: center;
         width: 100%;
+        color: $blueColor;
+    }
+
+    label {
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        // color: $blueColor;
     }
 
     input {
-        margin-top: 10px;
         margin-right: 10px;
     }
 
     textarea {
-        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        height: 80px;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+    }
+
+    button {
+        border: 1px black solid;
+        border-radius: 5px;
+        padding: 2px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(185, 176, 176);
+        }
     }
 }

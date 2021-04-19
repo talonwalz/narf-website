@@ -1,3 +1,6 @@
+$orangeColor: #E54817;
+$blueColor: #19818E;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,14 +33,17 @@
         
 
         li {
-            // border-bottom: 1px black solid;
             color: #fff;
-            border: 1px transparent solid;
+            // color: $blueColor;
+
+            border: 2px transparent solid;
             border-radius: 5px;
             padding: 2px;
 
             &:hover {
-                border: 1px solid white;
+                // border: 1px solid white;
+                border: 2px solid $blueColor;
+
                 border-radius: 5px;
                 padding: 2px;
                 cursor: pointer;
@@ -55,7 +61,7 @@
         padding: 0 70px;
         height: 70px;
         width: 50%;
-        margin-top: 20px;
+        margin: auto;
     }
 
     .right{

@@ -5,16 +5,9 @@
 }
    
   .slider{
-    // background: #09d3ac​;
-    width:80%;
+    width:70%;
     height: 100%;
-    // border: 1px solid black;
     background-color: white;
-
-    // h2 {
-    //     z-index: 3;
-    //     font-size: 40px;
-    // }
   }
    
   .slides .slick-prev,
@@ -22,12 +15,6 @@
     position: absolute;
     top: 50%;
     z-index: 1;
-  }
-  
-  .slides {
-    position: relative;
-    // border: 2px black solid;
-    border-radius: 5px;
   }
   
   .slides .slick-prev {
@@ -38,8 +25,10 @@
     right: 5%;
   }
 
-//   .slide {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//   }
+
+@media (max-width: 804px) {
+
+  .slider {
+    width: 100%;
+  }
+}

@@ -1,11 +1,14 @@
-
+$orangeColor: #E54817;
+$blueColor: #19818E;
 
 .success-container {
-
+    display: flex;
+    flex-direction: column;
     margin: 20px 10px;
 
     h2 {
         text-align: center;
+        color: $blueColor;
     }
 
     div {
@@ -29,5 +32,32 @@
     img {
         width: 30%;
         height: auto;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .success-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 20px;
+        }
+
+        aside {
+            margin: 20px auto;
+        }
+
+        img {
+            
+            width: 70%;
+            height: auto;
+            
+        }
     }
 }

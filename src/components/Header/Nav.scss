@@ -10,6 +10,9 @@ $blueColor: #19818E;
     border-top: 2px black solid;
     border-bottom: 2px black solid;
 
+    img {
+        display: none;
+    }
 
     ul {
         display: flex;
@@ -34,4 +37,63 @@ $blueColor: #19818E;
             background-color: $blueColor;
         }
     }
+}
+
+
+@media (max-width: 804px) {
+
+    .nav-container {
+        width: 90%;
+        height: 55px;
+        background-color: rgb(82, 79, 79);
+        border: 2px black solid;
+        border-radius: 5px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .hamburger {
+            margin: auto;
+            width: 100%;
+        }
+       
+        .hamburger-icon {
+            height: 30px;
+            width: 30px;
+            position: relative;
+            margin: 6px auto;
+            display: block;
+        
+        }
+
+        .dropdown {
+            // display: flex;
+            // flex-direction: column;
+            // align-items: flex-start;
+            background-color: $blueColor;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+            top: 16px;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 5px;
+        } 
+    
+        ul {
+            display: none;
+    
+            li {
+                text-align: center;
+                height: 100%;
+                padding-top: 20px;
+                color: white;
+                font-size: 18px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
 }

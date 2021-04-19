@@ -8,7 +8,6 @@ import Carousel from './Slider'
 const Landing = () => {
     return (
         <main className="landing">
-            <h1 className="mission" >Empowering our community one person at a time.</h1>
             <Carousel/>
             <About />
         </main>

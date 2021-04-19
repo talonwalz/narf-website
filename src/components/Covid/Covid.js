@@ -5,7 +5,7 @@ const Covid = () => {
         <section className="covid-container">
             <h3>IMPORTANT COVID-19 INFORMATION</h3>
             <br/>
-            <p>At Northern Arizona Rehabilitation and Fitness, there is nothing more important to us than your health and safety during this unprecedented time. The Department of Homeland Security and state governments have deemed physical therapy an essential component of health care during the coronavirus (COVID-19) pandemic; therefore, our clinics remain open to serve those in need. We are taking extensive preventative measures, guided by the CDC, to protect our patients and employees who enter our clinics.</p>
+            <p>At Northern Arizona Rehabilitation and Fitness, there is nothing more important to us than your health and safety during this unprecedented time. The Department of Homeland Security and state governments have deemed physical therapy an essential component of health care during the coronavirus (COVID-19) pandemic; therefore, our clinic remains open to serve those in need. We are taking extensive preventative measures, guided by the CDC, to protect our patients and employees who enter our clinic.</p>
             <br />
             <p>We hope that by providing this information you can make a clear decision to continue your plan of care with us during this time. The following protocols are now in place:</p>
             <br/>

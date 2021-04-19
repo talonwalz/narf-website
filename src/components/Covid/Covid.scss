@@ -13,7 +13,18 @@ $blueColor: #19818E;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 805px) {
+    .covid-container {
+        width: 100%;
+        padding: 20px 40px;
+
+        p {
+            font-size: 18px;;
+        }
+    }
+}
+
+@media (max-width: 450px) {
     .covid-container {
         width: 100%;
         padding: 20px 40px;

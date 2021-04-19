@@ -4,6 +4,7 @@ import tanner from '../../images/Narf/tanner.jpeg'
 import gym from '../../images/Narf/gym.jpeg'
 import pool from '../../images/Narf/pool.jpeg'
 import buildingImg from '../../images/building.jpg'
+import newBuilding from '../../images/BuildingWithSaying.jpg'
 import gymPic from '../../images/Narf/gymabove.jpeg'
 import React, {Component} from 'react'
 import Slider from 'react-slick'
@@ -12,7 +13,7 @@ import './Slider.scss'
 const photos = [
     {
         name: `front of building`,
-        url: buildingImg
+        url: newBuilding
     },
     {
         name: `gym picture`,
