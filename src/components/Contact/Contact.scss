@@ -2,8 +2,7 @@ $orangeColor: #E54817;
 $blueColor: #19818E;
 
 .contact {
-
-    
+ 
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -122,6 +121,143 @@ $blueColor: #19818E;
 
         &:hover {
             background-color: rgb(185, 176, 176);
+        }
+    }
+}
+
+@media (max-width: 450px) {
+
+    .contact {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+    
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .address {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 2px black solid;
+        border-radius: 5px;
+        padding: 20px 20px;
+        color: $blueColor;
+        margin-top: 20px;
+
+        h2 {
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+    }
+    
+    .hours {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: space-evenly;
+        border: 2px black solid;
+        border-radius: 5px;
+        padding: 10px 0;
+        margin-top: 20px;
+        width: 100%;
+    
+        section {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;            
+        }
+    
+        div {
+            margin: 10px 0;
+            color: $blueColor;
+            width: 100%;
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+    }
+    
+    .request-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border: 2px black solid;
+        border-radius: 5px;
+        padding: 10px 10px;
+        padding: 0;
+        margin-top: 20px;
+    
+        .input-box {
+            display: flex;
+            
+        }
+    
+        h2 {
+            text-align: center;
+            width: 100%;
+            color: $blueColor;
+        }
+    
+        label {
+            margin-top: 10px;
+            margin-left: 10px;
+
+            font-size: 17px;
+            font-weight: bold;
+            // color: $blueColor;
+        }
+    
+        input {
+            margin: 0 10px;
+            height: 30px;
+            font-size: 17px;
+            width: 150px;
+        }
+    
+        textarea {
+            margin: 0 10px;
+            margin-bottom: 20px;
+            height: 120px;
+            font-size: 17px;
+
+        }
+    
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 100%;
+        }
+    
+        button {
+            border: 1px black solid;
+            border-radius: 5px;
+            padding: 2px;
+            font-size: 16px;
+            margin: 0 auto;
+            margin-bottom: 20px;
         }
     }
 }

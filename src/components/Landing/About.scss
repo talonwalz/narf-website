@@ -24,6 +24,34 @@
     }
 }
 
+
+@media (max-width: 805px) {
+    .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+        img {
+            width: 70%;
+            height: auto;
+        }
+
+        section {
+            padding: 20px 10px;
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                padding: 0 30px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
 @media (max-width: 450px) {
     .about-container {
     display: flex;
@@ -45,7 +73,7 @@
 
             p {
                 padding: 0 30px;
-                font-size: 18px;
+                font-size: 16px;
             }
         }
     }

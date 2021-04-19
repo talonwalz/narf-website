@@ -10,7 +10,7 @@ const Nav = () => {
             <div className="hamburger">
                 <img className="hamburger-icon" onClick={() => setMenu(!menu)} src="https://img.icons8.com/material-rounded/24/000000/menu--v4.png" alt="hamburger menu"/>
             </div>
-            <ul className={ menu ? "dropdown" : null }>
+            <ul className={ menu ? "dropdown" : "null" }>
                 <Link to="/" style={{textDecoration: "none"}} onClick={() => setMenu(!menu)}><li>HOME</li></Link>
                 <Link to="/our-team" style={{textDecoration: "none"}} onClick={() => setMenu(!menu)}><li>OUR TEAM</li></Link>
                 <Link to="/our-services" style={{textDecoration: "none"}} onClick={() => setMenu(!menu)}><li>SERVICES</li></Link>

@@ -17,9 +17,9 @@ const SuccessStories = (props) => {
 
     const mappedTestimonials = success.map(p => {
         return (
-            <aside key={p.post_id}>
+            <p key={p.post_id}>
                 {p.post}
-            </aside>
+            </p>
         )
     })
     console.log(success)
@@ -27,11 +27,15 @@ const SuccessStories = (props) => {
     return (
         <section className="success-container">
             <h2>Testimonials</h2>
+
             <div>
+                
                 <article className="testimonial">
                     {mappedTestimonials}
                 </article>
-                <img src="https://images.unsplash.com/photo-1511573946159-906c6ed20eb4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG1vdGl2YXRpb25hbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="motivational"/>
+                
+                
+            <img className="success" src="https://images.unsplash.com/photo-1511573946159-906c6ed20eb4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG1vdGl2YXRpb25hbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="motivational"/>
             </div>
         </section>
     )

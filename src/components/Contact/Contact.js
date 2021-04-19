@@ -52,24 +52,24 @@ const Contact = () => {
             <h2>Hours</h2>
             <article className="hours">
                 <section>
-                <div>
-                    <h5>Monday</h5>
-                    <h5>Tuesday</h5>
-                    <h5>Wednesday</h5>
-                    <h5>Thursday</h5>
-                    <h5>Friday</h5>
-                    <h5>Saturday</h5>
-                    <h5>sunday</h5>
-                </div>
-                <div>
-                <h5>closed</h5>
-                <h5>7:00 AM - 6:00 PM</h5>
-                <h5>7:00 AM - 6:00 PM</h5>
-                <h5>7:00 AM - 6:00 PM</h5>
-                <h5>7:00 AM - 6:00 PM</h5>
-                <h5>closed</h5>
-                <h5>closed</h5>
-                </div>
+                    <div>
+                        <h5>Monday</h5>
+                        <h5>Tuesday</h5>
+                        <h5>Wednesday</h5>
+                        <h5>Thursday</h5>
+                        <h5>Friday</h5>
+                        <h5>Saturday</h5>
+                        <h5>sunday</h5>
+                    </div>
+                    <div>
+                        <h5>closed</h5>
+                        <h5>7:00 AM - 6:00 PM</h5>
+                        <h5>7:00 AM - 6:00 PM</h5>
+                        <h5>7:00 AM - 6:00 PM</h5>
+                        <h5>7:00 AM - 6:00 PM</h5>
+                        <h5>closed</h5>
+                        <h5>closed</h5>
+                    </div>
                 </section>
             </article>
             <h2>Request an Appointment</h2>

@@ -121,6 +121,8 @@ $blueColor: #19818E;
 
 
 
+
+
 @media (max-width: 804px) {
 
     .header-container {
@@ -135,6 +137,7 @@ $blueColor: #19818E;
         margin: 30px auto;
         height: 100%;
         // position: relative;
+        z-index: 3;
     
         .left {
             width: 80%;
@@ -214,102 +217,13 @@ $blueColor: #19818E;
         .nav-section {
             background-color: $blueColor;
             padding: 5px;
-            // min-height: 70px;
             border-top: 2px black solid;
             border-bottom: 2px black solid;
-            // display: flex;
             height: 100%;
-
+            z-index: 5;
 
         }
     }
     
-
-
-// @media (max-width: 820px) {
-//     .header-container {
-//         padding-top: 30px;
-//         background-color: rgb(185, 177, 177);
-//         display: flex;
-//         flex-direction: column;
-//         width: 100%;
-//         justify-content: space-evenly;
-//         align-items: center;
-//         position: relative;
-//         border-bottom: 2px black solid;
-//         height: 100%;
-    
-//         img {
-//             width: 100%;
-//             height: auto;
-//             padding-right: 20px;
-//             z-index: 3;
-//         }
-    
-//         .middle {
-//             font-size: 18px;
-//             padding: 20px 0;
-//             text-align: center;
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: space-evenly;
-//             height: 100%;
-//             z-index: 3;
-//         }
-
-//         .hamburger-menu {
-//             padding-bottom: 0;
-//             margin-bottom: 0;
-//             background-color: $blueColor;
-//             width: 100%;
-//             height: 45px;
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             z-index: 3;
-
-//             div {
-//                 width: 90%;
-//                 height: 35px;
-//                 border: 1px black solid;
-//                 border-radius: 5px;
-//                 background-color: $orangeColor;
-//                 display: flex;
-//                 align-items: center;
-//                 z-index: 3;
-//             }
-
-//             img {
-//                 padding: 5px;
-//                 height: 30px;
-//                 width: auto;
-//             }
-//         }
-
-//         .right {
-//             display: none;  
-//             // animation: slide;
-//             // animation-duration: 1s;    
-//         }
-        
-//         .dropdown {
-//             animation-name: slide;
-//             animation-duration: 1s;
-//             padding-bottom: 0;
-//             margin-bottom: 0;
-//             background-color: $blueColor;
-//             width: 100%;
-//             height: 100%;
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: center;
-//             align-items: center;
-            
-//             li {
-//                 list-style: none;
-//             }
-//         }
-//     }
-// }
 
 
