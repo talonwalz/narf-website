@@ -15,8 +15,6 @@ $blueColor: #19818E;
     justify-content: space-between;
     padding: 5px 0;
     position: relative;
-    // border-bottom: 2px black solid;
-    // height: 80px;
 
     .left {
         width: 26%;
@@ -59,7 +57,7 @@ $blueColor: #19818E;
         justify-content: space-between;
         align-items: flex-end;
         height: 100%;
-        margin: 0 25px;
+        margin: auto 25px;
         
         .links {
             display: flex;
@@ -82,12 +80,14 @@ $blueColor: #19818E;
                 }
             }
 
-            .btn-1, .btn-2 {
+            .btn-1, .btn-2, btn-3 {
                 background-color: lighten($blueColor, 10%);
             }
 
             .btn-3 {
                 background-color: orangered;
+                // background-color: lighten($blueColor, 10%);
+                // border: $orangeColor solid 2px;
 
                 &:hover {
                     background-color: $orangeColor;
@@ -96,6 +96,30 @@ $blueColor: #19818E;
         }
 
 }
+
+
+.first {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.first:hover {
+    box-shadow: 0 0 40px 40px $orangeColor inset;
+}
+
+.third {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .third:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+
+
+  
 
 
 
@@ -135,8 +159,9 @@ $blueColor: #19818E;
         align-content: center;
         padding: 5px 0;
         margin: 30px auto;
+        margin-bottom: 0;
         height: 100%;
-        // position: relative;
+        position: relative;
         z-index: 3;
     
         .left {
@@ -205,6 +230,7 @@ $blueColor: #19818E;
     
                 .btn-3 {
                     background-color: orangered;
+                    margin-bottom: 30px;
     
                     &:hover {
                         background-color: $orangeColor;
@@ -220,8 +246,8 @@ $blueColor: #19818E;
             border-top: 2px black solid;
             border-bottom: 2px black solid;
             height: 100%;
-            z-index: 5;
-
+            // position: relative;
+            // z-index: 2;
         }
     }
     

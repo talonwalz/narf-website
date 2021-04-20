@@ -1,6 +1,9 @@
 import React from 'react'
 import './Covid.scss'
+
+
 const Covid = () => {
+    
     return (
         <section className="covid-container">
             <h3>IMPORTANT COVID-19 INFORMATION</h3>

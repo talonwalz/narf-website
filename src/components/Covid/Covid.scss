@@ -17,7 +17,8 @@ $blueColor: #19818E;
     .covid-container {
         width: 100%;
         padding: 20px 40px;
-
+        position: relative;
+        z-index: -2;
         p {
             font-size: 17px;;
         }

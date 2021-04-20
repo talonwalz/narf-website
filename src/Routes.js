@@ -21,8 +21,6 @@ export default (
         <Route path="/patient-feedback" component={Feedback}/>
         <Route path="/admin" component={Admin}/>
         <Route path="/covid-info" component={Covid}/>
-        <Route path="/success-stories" component={SuccessStories}/>
-
-        
+        <Route path="/success-stories" component={SuccessStories}/>   
     </Switch>
 )

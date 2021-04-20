@@ -152,7 +152,7 @@ $blueColor: #19818E;
     
         .right {
             position: relative;
-            left: 20px;
+            left: 0;
             margin: 20px auto;
             display: flex;
             justify-content: center;
@@ -162,13 +162,12 @@ $blueColor: #19818E;
 
             div {
                 margin-top: 40px;
-                // position: relative;
-                // left: 20px;
-                display: flex;
-                // flex-direction: column;
+                display: flex;  
                 justify-content: center;
                 align-items: center;
                 width: 100%;
+                position: relative;
+                left: 0;
             }
               
             .footer-logo {
@@ -177,11 +176,11 @@ $blueColor: #19818E;
             }
 
             .google {
-                margin-left: 20px;
+                margin-left: 30px;
                 width: 60px;
                 height: auto;
                 position: relative;
-                right: 15px;
+                right: 0;
             }
     
             .fb{
@@ -190,7 +189,7 @@ $blueColor: #19818E;
                 height: 60px;
                 width: auto;   
                 position: relative;
-                right: 45px;            
+                right: 0;            
             }
         }
     
@@ -243,7 +242,7 @@ $blueColor: #19818E;
     
         .right {
             position: relative;
-            left: 20px;
+            left: 0;
             margin: 20px auto;
             display: flex;
             flex-direction: column;
@@ -258,7 +257,9 @@ $blueColor: #19818E;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                width: 100%;
+                position: relative;
+                left: 0;
+                // width: 100%;
             }
               
             .footer-logo {
@@ -269,16 +270,16 @@ $blueColor: #19818E;
                 margin-top: 20px;
                 margin-left: 0;
                 width: 60px;
-                height: auto;
+                height: 60px;
                 position: relative;
-                right: 30px;
+                right: 0;
             }
     
             .fb{
                 position: relative;
-                right: 30px;
+                right: 0;
                 height: 60px;
-                width: auto;               
+                width: 60px;
             }
         }
     

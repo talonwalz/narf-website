@@ -5,6 +5,8 @@ $blueColor: #19818E;
     display: flex;
     flex-direction: column;
     margin: 20px 10px;
+    position: relative;
+    z-index: -2;
 
     h2 {
         text-align: center;
