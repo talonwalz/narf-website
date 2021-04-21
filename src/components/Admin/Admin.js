@@ -56,7 +56,7 @@ const Admin = (props) => {
                 <h4> - {e.first_name} {e.last_name}</h4>
                 <p>{e.feedback}</p>
                 <div>
-                <button onClick={() => deleteFeedback(e.feedback_id)}>Delete</button>
+                <button className="altBtn" onClick={() => deleteFeedback(e.feedback_id)}>Delete</button>
                 </div>
             </article>
         )
@@ -67,7 +67,7 @@ const Admin = (props) => {
         <section className="admin-container">
             {props.userReducer.user ? <h4>Welcome {props.userReducer.user.username}</h4> : null }
             <div>
-                <button onClick={logoutUser}>Logout</button>
+                <button className="altBtn" onClick={logoutUser}>Logout</button>
             </div>
             <article className="feedback">
                 <h2>Feedback</h2>

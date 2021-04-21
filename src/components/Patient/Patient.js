@@ -1,17 +1,21 @@
 import React from 'react'
-import logo from '../../images/fullLogo.png'
+import logo from '../../images/kokopellis.jpg'
 import patientFile from '../../images/Patientforms.pdf'
 import './Patient.scss'
 
 const Patient = () => {
     return (
         <main className="patient-container">
-            <img src={logo} alt="narf logo"/>
+            
             <section>
-                <h2>Patient Forms</h2>
-                <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1IBYAw9T0FFJUYDx0VSNfkGQBi20nDG0gaDUYv5BuQDE/edit?usp=sharing">Link to Patient form</a>
-                <a target="_blank" rel="noopener noreferrer" href={patientFile}>PDF</a>
+                <h2>New Patients</h2>
+                <p>To help expedite your first visit, please download, print and complete these forms. Bring them with you when you come in for your first visit. If you choose to fill out the patient form packet at our office, please arrive 10-15 minutes before your appointment to allow enough time to get them completed before your appointment.</p>
+                {/* <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1IBYAw9T0FFJUYDx0VSNfkGQBi20nDG0gaDUYv5BuQDE/edit?usp=sharing">Link to Patient form</a> */}
+                <a target="_blank" rel="noopener noreferrer" href={patientFile}><button className=" one mainBtn">Patient Forms</button></a>
+                <a target="_blank" rel="noopener noreferrer" href={patientFile}><button className=" two mainBtn">Patient Forms</button></a>
+                <a target="_blank" rel="noopener noreferrer" href={patientFile}><button className=" three mainBtn">Patient Forms</button></a>
             </section>
+            <img src={logo} alt="narf logo"/>
         </main>
     )
 }

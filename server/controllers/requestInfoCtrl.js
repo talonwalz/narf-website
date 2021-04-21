@@ -9,10 +9,10 @@ module.exports = {
 
     addRequest: async (req, res) => {
         const db = req.app.get('db');
-        const { first, last, phone, question, date } = req.body
+        const { first, last, phone, message, date } = req.body
         console.log(req.body)
 
-        const questions = await db.RequestInfo.add_request(first, last, phone, question, date)
+        const questions = await db.RequestInfo.add_request(first, last, phone, message, date)
 
         res.status(200).send(questions)
     },

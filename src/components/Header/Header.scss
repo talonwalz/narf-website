@@ -44,10 +44,6 @@ $blueColor: #19818E;
             font-weight: bold;
         }
     }
-
-    .hamburger-menu {
-        display: none;
-    }
 }
 
 .right {
@@ -73,57 +69,22 @@ $blueColor: #19818E;
                 border-radius: 5px;
                 border: 2px black solid;
                 cursor: pointer;
-
-                &:hover {
-                    background-color: $blueColor;
-                    color: #fff;
-                }
+            
+            }
+            .btn1 {
+                animation: slideLeft ease-in 1s;
             }
 
-            .btn-1, .btn-2, btn-3 {
-                background-color: lighten($blueColor, 10%);
+            .btn2 {
+                animation: slideLeft ease-in .75s;
             }
 
-            .btn-3 {
-                background-color: orangered;
-                // background-color: lighten($blueColor, 10%);
-                // border: $orangeColor solid 2px;
-
-                &:hover {
-                    background-color: $orangeColor;
-                }
+            .btn3 {
+                animation: slideLeft ease-in .5s;
             }
+
         }
-
 }
-
-
-.first {
-    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-}
-
-.first:hover {
-    box-shadow: 0 0 40px 40px $orangeColor inset;
-}
-
-.third {
-    border-color: #3498db;
-    color: #fff;
-    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
-    -webkit-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;
-  }
-  .third:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
-  }
-
-
-  
-
-
-
-
 
 
 
@@ -146,7 +107,6 @@ $blueColor: #19818E;
 
 
 
-
 @media (max-width: 804px) {
 
     .header-container {
@@ -162,7 +122,6 @@ $blueColor: #19818E;
         margin-bottom: 0;
         height: 100%;
         position: relative;
-        z-index: 3;
     
         .left {
             width: 80%;
@@ -217,24 +176,12 @@ $blueColor: #19818E;
                     border: 2px black solid;
                     cursor: pointer;
                     font-size: 18px;
-    
-                    &:hover {
-                        background-color: $blueColor;
-                        color: #fff;
-                    }
+                    
                 }
-    
-                .btn-1, .btn-2 {
-                    background-color: lighten($blueColor, 10%);
-                }
-    
-                .btn-3 {
-                    background-color: orangered;
-                    margin-bottom: 30px;
-    
-                    &:hover {
-                        background-color: $orangeColor;
-                    }
+
+                .btn3 {
+                    margin-bottom: 20px;
+                    
                 }
             }
     
@@ -246,10 +193,29 @@ $blueColor: #19818E;
             border-top: 2px black solid;
             border-bottom: 2px black solid;
             height: 100%;
-            // position: relative;
-            // z-index: 2;
+            
         }
     }
-    
 
+    
+    
+    .first {
+        -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+        transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    }
+    
+    .first:hover {
+        box-shadow: 0 0 40px 40px $orangeColor inset;
+    }
+    
+    .third {
+        border-color: #3498db;
+        color: #fff;
+        box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+        -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;
+      }
+      .third:hover {
+        box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+      }
 

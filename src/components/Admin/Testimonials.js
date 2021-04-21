@@ -59,8 +59,8 @@ const Testimonials = (props) => {
                 { edit ? (<textarea type="text" onChange={e=>setUpdatePost(e.target.value)}></textarea>) : null }
                 <p>{t.post}</p>
                 <div>
-                {edit ? <button onClick={()=> editTestimonial(t.post_id)}>Update</button> :<button onClick={()=> deleteTestimonial(t.post_id)}>Delete</button> }
-                <button onClick={()=> setEdit(!edit)}>Edit</button>
+                {edit ? <button className="altBtn" onClick={()=> editTestimonial(t.post_id)}>Update</button> :<button className="altBtn" onClick={()=> deleteTestimonial(t.post_id)}>Delete</button> }
+                <button className="altBtn" onClick={()=> setEdit(!edit)}>Edit</button>
                 </div>
             </article>
         )
@@ -71,7 +71,7 @@ const Testimonials = (props) => {
             <h2>Testimonials</h2>
             <textarea type="text" value={post} placeholder="Add testimonial" onChange={e=>setPost(e.target.value)}/>
             <div className="btn-div">
-            <button onClick={addTestimonial}>Submit</button>
+            <button className="altBtn" onClick={addTestimonial}>Submit</button>
             </div>
             {mappedTestimonials}     
         </section>

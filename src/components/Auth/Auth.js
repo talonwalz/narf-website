@@ -31,7 +31,11 @@ const Auth = (props) => {
             props.history.push('/admin')
             console.log(res.data)
         })
-        .catch(err => console.log(err))
+        .catch(err => {
+            console.log(err)
+            alert('Invalid Login')
+        })
+            
     }  
 
     function registerUser() {
@@ -62,9 +66,9 @@ const Auth = (props) => {
             <input value={username}  placeholder="username" onChange={e => setUsername(e.target.value)}/>
             <input value={password} type="password" placeholder="password" onChange={e => setPassword(e.target.value)}/>
             <div>
-            <button onClick={loginUser}>Login</button>
-            <button onClick={logoutUser}>Logout</button>
-            {admin ? <button onClick={registerUser}>Register</button> : null }
+            <button className="altBtn" onClick={loginUser}>Login</button>
+            <button className="altBtn" onClick={logoutUser}>Logout</button>
+            {admin ? <button className="altBtn" onClick={registerUser}>Register</button> : null }
             </div>
             <img src={image} alt="NARF logo"/>
             </div>

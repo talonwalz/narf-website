@@ -20,9 +20,9 @@ const Header = () => {
             </section>
             <section className="right">
                 <div className="links">
-                <Link to="/patient-feedback"><button className='btn-1 first'>Give Feedback</button></Link>
-                <Link to="/covid-info"><button className='btn-2 third'>Covid Updates</button></Link>
-                <Link to="/contact-us"><button className='btn-3 third'><strong>Contact Us</strong></button></Link>
+                <Link to="/patient-feedback"><button className='btn1 mainBtn'><strong>Give Feedback</strong></button></Link>
+                <Link to="/covid-info"><button className='btn2 mainBtn'><strong>Covid Updates</strong></button></Link>
+                <Link to="/contact-us"><button className=' btn3 mainBtn'><strong>Contact Us</strong></button></Link>
                 </div>
             </section>           
         </header>

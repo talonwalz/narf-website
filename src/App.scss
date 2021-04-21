@@ -1,6 +1,8 @@
 @import 'scss/config';
 @import 'scss/buttons';
 @import 'scss/alerts';
+$orangeColor: #E54817;
+$blueColor: #19818E;
 
 * {
   box-sizing: border-box;
@@ -11,6 +13,160 @@
 .App {
   width: 100vw;
   height: 100%;
-  z-index: -4;
+  position: relative;
+  z-index: 0;
 }
 
+
+.mainBtn {
+  width: 110px;
+  height: 20px;
+  border-color: black;
+  border-radius: 5px;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  background-color: lighten($blueColor, 5%);
+  transition: color 150ms ease-in-out;
+  cursor: pointer;
+}
+.mainBtn:after {
+  content: '';
+  position: absolute;
+  display: block;
+  // border-radius: 15px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  // -webkit-transform: translateY(-50%);
+  // transform: translateY(-50%);
+  width: 0;
+  height: 100%;
+  background: lighten($orangeColor, 0%);
+  z-index: -1;
+  -webkit-transition: width 550ms ease-in-out;
+  transition: width 550ms ease-in-out;
+}
+.mainBtn:hover {
+  color: #fff;
+}
+.mainBtn:hover:after {
+  width: 110%;
+  height: 100%;
+}
+
+
+.altBtn {
+  padding: 1px 10px;
+  width: 80px;
+  border: 2px black solid;
+  border-radius: 5px;
+  color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  // -webkit-transition: color 250ms ease-in-out;
+  background-color: rgb(82, 79, 79);
+  transition: color 350ms ease-in-out;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.altBtn:after {
+  content: '';
+  position: absolute;
+  display: block;
+  // bottom: 100%;
+  // left: 0;
+  // -webkit-transform: translateY(100%);
+  // transform: translateY(100%);
+  // width: 100%;
+  // height: 0;
+  // -webkit-transition: height 450ms ease-in-out;
+  // transition: height 450ms ease-in-out;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 0%;
+  height: 100%;
+  // -webkit-transition: width 450ms ease-in;
+  transition: width 450ms ease-in;
+  background: lighten($blueColor, 10%);
+  z-index: -1; 
+}
+
+.altBtn:hover {
+  color: black;
+}
+
+.altBtn:hover:after {
+  width: 110%;
+  height: 120%;
+}
+
+
+@media (max-width: 450px) {
+  .mainBtn {
+      transition: none;
+  }
+  .mainBtn:after {
+      display: none;
+  }
+  .mainBtn:hover {
+      color: black;
+  }
+  .mainBtn:hover:after {
+      display: none;
+  }
+
+  .altBtn:after {
+    display: none;
+  }
+  .altBtn:after {
+    display: none;
+  }
+  .altBtn:hover {
+    color: white;
+  }
+}
+
+
+@keyframes slideRight {
+  0% {
+      transform: translateX(-600px)
+  }
+  75% {
+      transform: translateX(20px);
+  }
+  100% {
+      transform: translateX();
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+      transform: translateX(200px)
+  }
+  75% {
+      transform: translateX(-20px);
+  }
+  100% {
+      transform: translateX();
+  }
+}
+
+@keyframes slideDown {
+  0% {
+      transform: translateY(-200px)
+  }
+  75% {
+      transform: translateY(5px);
+  }
+  100% {
+      transform: translateY();
+  }
+}

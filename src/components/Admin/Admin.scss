@@ -73,21 +73,24 @@ $blueColor: #19818E;
         width: 100%;
     }
 
-    button {
-        width: 60px;
-        // padding: 2px;
-    }
+    // button {
+    //     width: 60px;
+    //     // padding: 2px;
+    // }
 }
-}
-button {
-    width: 60px;
-    border-radius: 5px;
-    border: 1px black solid;
-    cursor: pointer;
 
-    &:hover {
-        background-color: gray;
-    }
+
+
+// button {
+//     width: 60px;
+//     border-radius: 5px;
+//     border: 1px black solid;
+//     cursor: pointer;
+
+//     &:hover {
+//         background-color: gray;
+//     }
+// }
 }
 
 

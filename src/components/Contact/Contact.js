@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from 'react'
 import './Contact.scss'
 // import image from '../../images/logoIcon.png'
-import image from '../../images/kokopellis.jpg'
+import image from '../../images/logoIcon.png'
 
 import axios from 'axios'
 import Header from '../Header/Header'
@@ -19,23 +19,39 @@ const Contact = () => {
 
     function addRequest() {
 
-            axios.post('/api/email-us', { first, last, phone, message, email, subject})
-            .then(res => console.log(res.data))
-
-            axios.post('/api/email-from-us', { first, last, email })
-
-            // axios.post('/api/request-info', { first, last, phone, message, date})
+            // axios.post('/api/email-us', { first, last, phone, message, email, subject})
+            // // .then(res => console.log(res.data))
+            
+            // .catch(err => console.log(err))
+            // axios.post('/api/email-from-us', { first, last, email })
+            emailUs()
+            emailFromUs()
+            axios.post('/api/request-info', { first, last, phone, message, date})
             .then(res => {
                 setFirst('')
                 setLast('')
                 setPhone('')
                 setMessage('')
                 setEmail('')
+                setSubject('')
                 console.log(res.data)
             })
             .catch(err => console.log(err))
 
     }
+
+    function emailUs() {
+        axios.post('/api/email-us', { first, last, phone, message, email, subject})
+        .then()
+        .catch(err => console.log(err))
+    }
+
+    function emailFromUs() {
+        axios.post('/api/email-from-us', { first, last, email, image })
+        .then()
+        .catch(err => console.log(err))
+    }
+
 
     return (
         <main className="contact">
@@ -104,7 +120,7 @@ const Contact = () => {
                 <label>Message: </label>          
                 <textarea placeholder="ask any specific questions..." value={message} onChange={e => setMessage(e.target.value)} required/>
                 </div> 
-                <button onClick={addRequest}>Submit</button>
+                <button className="mainBtn" onClick={addRequest}>Submit</button>
             </form>
             </section>
         </main>

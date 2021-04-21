@@ -36,7 +36,7 @@ const Feedback = (props) => {
                 </div>
                 <textarea value={feedback} onChange={e => setFeedback(e.target.value)} placeholder="feedback"/>
                 <div className="btn-div">
-                    <button onClick={addFeedback}>Submit</button>
+                    <button className="mainBtn" onClick={addFeedback}>Submit</button>
                 </div>
                 <img src={image} alt="narf logo"/>
 

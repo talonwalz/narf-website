@@ -12,7 +12,7 @@ const Nav = () => {
                 <div></div>
             </div>           
             <ul className={ menu ? "dropdown" : "null" }>
-                <Link to="/" style={{textDecoration: "none"}} onClick={() => setMenu(!menu)}><li className="">HOME</li></Link>
+                <Link to="/" style={{textDecoration: "none"}} onClick={() => setMenu(!menu)}><li className="btn btn1">HOME</li></Link>
                 <Link to="/our-team" style={{textDecoration: "none"}} onClick={() => setMenu(!menu)}><li >OUR TEAM</li></Link>
                 <Link to="/our-services" style={{textDecoration: "none"}} onClick={() => setMenu(!menu)}><li>SERVICES</li></Link>
                 <Link to="/new-patient" style={{textDecoration: "none"}} onClick={() => setMenu(!menu)}><li>NEW PATIENT</li></Link>

@@ -1,26 +1,70 @@
-
+$orangeColor: #E54817;
+$blueColor: #19818E;
 
 .patient-container {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 40px;
     position: relative;
     z-index: -2;
 
+    section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px;
+    
+
+    }
+
+    h2 {
+        color: $blueColor;
+        margin-bottom: 20px;
+        // animation: slideIn ease-in 1s;
+    }
+
+    p {
+        margin: 0 10%;
+    }
+
     img {
-        width: 30%;
+        margin-top: 20px;;
+        width: 20%;
         height: auto;
     }
 
     a {
         text-decoration: none;
-        color: black;
-        border: 1px black solid;
-        border-radius: 5px;
-        padding: 2px;
-        background-color: blue;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        button {
+            cursor: pointer;
+        }
+        
+        .one {
+            margin-top: 20px;
+            animation: slideRight ease-in .75s;
+        }
+        .two {
+            animation: slideRight ease-in 1s;
+        }
+        .three {
+            animation: slideRight ease-in 1.25s;
+        }
     }
 }
+
+
+@media (max-width: 450px) {
+    .patient-container {
+        button {
+            height: 40px;
+            width: 200px;
+            font-size: 16px;
+        }
+    }
+}
+

@@ -39,11 +39,10 @@ $blueColor: #19818E;
             border: 2px transparent solid;
             border-radius: 5px;
             padding: 2px;
+            transition: .5s;
 
             &:hover {
-                // border: 1px solid white;
                 border: 2px solid $blueColor;
-
                 border-radius: 5px;
                 padding: 2px;
                 cursor: pointer;
@@ -79,7 +78,6 @@ $blueColor: #19818E;
             width: 40%;
             margin: 10px;
             position: relative;
-            left: 15px;
         }
     
         .footer-logo {
@@ -91,15 +89,23 @@ $blueColor: #19818E;
             height: auto;
         }
 
-        svg {
+        .google {
             color: blue;
-            background-color: white;
+            transition: 1s ease-in-out;
+
+            &:hover {
+                transform: rotate(360deg);
+            }
         }
 
-        .fb{
+        .fb {
             height: 30px;
             width: auto;
+            transition: 1s ease-in-out;
 
+            &:hover {
+                transform: rotate(360deg);
+            }
             
         }
     }
@@ -223,6 +229,20 @@ $blueColor: #19818E;
     
             li {
                 font-size: 14px;
+
+                &:hover {
+                    border: none;
+                    border-radius: none;
+                    padding: none;
+                    cursor: none;
+                }
+
+                &:active {
+                    border: 2px solid $blueColor;
+                    border-radius: 5px;
+                    padding: 2px;
+                    cursor: pointer;
+                }
             }
         }
     
