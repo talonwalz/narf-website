@@ -112,6 +112,7 @@ $blueColor: #19818E;
 @media (max-width: 450px) {
   .mainBtn {
       transition: none;
+      height: 40px;
   }
   .mainBtn:after {
       display: none;
