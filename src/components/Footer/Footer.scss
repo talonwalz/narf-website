@@ -134,7 +134,7 @@ $blueColor: #19818E;
             display: flex;
             flex-direction: column;
             list-style: none;
-            font-size: 15px;
+            font-size: 18px;
             width: 100%;
             align-items: center;
             justify-content: center;
@@ -147,7 +147,7 @@ $blueColor: #19818E;
         .middle {
             margin: 30px auto;
             position: relative;  
-            font-size: 18px;
+            font-size: 22px;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -230,7 +230,8 @@ $blueColor: #19818E;
             justify-content: center;
     
             li {
-                font-size: 14px;
+                font-size: 18px;
+                margin-bottom: 10px;
 
                 &:hover {
                     border: none;
@@ -251,7 +252,7 @@ $blueColor: #19818E;
         .middle {
             margin: 40px auto;
             position: relative;  
-            font-size: 18px;
+            font-size: 20px;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -281,7 +282,6 @@ $blueColor: #19818E;
                 align-items: center;
                 position: relative;
                 left: 0;
-                // width: 100%;
             }
               
             .footer-logo {

@@ -116,7 +116,7 @@ const Contact = () => {
                     <input type="text" placeholder="request apt" value={subject} onChange={e=>setSubject(e.target.value)} required/>
                 </div>   
                 <div className="inputs">
-                <label>Message: </label>          
+                <label className="special wow">Message: </label>          
                 <textarea placeholder="ask any specific questions..." value={message} onChange={e => setMessage(e.target.value)} required/>
                 </div> 
                 <button className="mainBtn" onClick={addRequest}>Submit</button>

@@ -195,9 +195,10 @@ $blueColor: #19818E;
     
         section {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             width: 100%; 
-            padding: 0;           
+            padding: 0;  
+            margin-right: 20px;         
         }
     
         div {
@@ -247,14 +248,15 @@ $blueColor: #19818E;
             height: 30px;
             font-size: 17px;
             width: 150px;
+            padding-left: 5px;
         }
     
         textarea {
-            margin: 0 10px;
+            margin: 0 25px;
             margin-bottom: 20px;
             height: 120px;
             font-size: 17px;
-
+            padding: 5px;
         }
     
         .inputs {
@@ -275,6 +277,10 @@ $blueColor: #19818E;
 
         .special {
             margin-left: 15px;
+        }
+
+        .wow {
+            margin-left: 25px;
         }
     }
 }
