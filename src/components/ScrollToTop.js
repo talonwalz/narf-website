@@ -15,4 +15,4 @@ const ScrollToTop = () => {
 export default ScrollToTop
 
 // import into index.js and add it right above where you are rendering App.js
-//This makes it so it will scroll to the top after each route
+// This makes it so it will scroll to the top after each route
