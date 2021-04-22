@@ -53,7 +53,7 @@ const Admin = (props) => {
     const mappedFeedback = props.feedbackReducer.feedback.map((e) => {
         return (
             <article className="review" key={e.feedback_id}>
-                <h4> - {e.first_name} {e.last_name}</h4>
+                <h2><strong> - {e.first_name} {e.last_name}</strong></h2>
                 <p>{e.feedback}</p>
                 <div>
                 <button className="altBtn" onClick={() => deleteFeedback(e.feedback_id)}>Delete</button>
@@ -65,12 +65,12 @@ const Admin = (props) => {
 
     return (
         <section className="admin-container">
-            {props.userReducer.user ? <h4>Welcome {props.userReducer.user.username}</h4> : null }
+            {props.userReducer.user ? <h3>Welcome {props.userReducer.user.username}</h3> : null }
             <div>
                 <button className="altBtn" onClick={logoutUser}>Logout</button>
             </div>
             <article className="feedback">
-                <h2>Feedback</h2>
+                <h1>Feedback</h1>
                 <div className="reviw">
                     {mappedFeedback}
                 </div>

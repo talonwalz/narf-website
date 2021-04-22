@@ -14,7 +14,7 @@ $blueColor: #19818E;
     position: relative;
     z-index: -2;
 
-    h4 {
+    h3 {
         text-align: right;
         width: 100%;
         margin-bottom: 10px;
@@ -58,9 +58,9 @@ $blueColor: #19818E;
     padding: 5px 10px;
     margin: 10px;
 
-    h4, p {
+    h2, p {
         text-align: left;
-        font-size: 12px;
+        font-size: 18px;
 
     }
 
@@ -71,26 +71,12 @@ $blueColor: #19818E;
         justify-content: flex-end;
         align-items: flex-end;
         width: 100%;
+        
+        button {
+            margin: 10px;
+        }
     }
-
-    // button {
-    //     width: 60px;
-    //     // padding: 2px;
-    // }
 }
-
-
-
-// button {
-//     width: 60px;
-//     border-radius: 5px;
-//     border: 1px black solid;
-//     cursor: pointer;
-
-//     &:hover {
-//         background-color: gray;
-//     }
-// }
 }
 
 

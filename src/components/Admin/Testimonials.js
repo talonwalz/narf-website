@@ -68,7 +68,7 @@ const Testimonials = (props) => {
 
     return (
         <section className="testimonial-container">
-            <h2>Testimonials</h2>
+            <h1>Testimonials</h1>
             <textarea type="text" value={post} placeholder="Add testimonial" onChange={e=>setPost(e.target.value)}/>
             <div className="btn-div">
             <button className="altBtn" onClick={addTestimonial}>Submit</button>

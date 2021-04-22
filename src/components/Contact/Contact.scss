@@ -102,7 +102,6 @@ $blueColor: #19818E;
 
     input {
         margin-right: 30px;
-        // margin-left: 10px;
         width: 350px;
         height: 50px;
         font-size: 20px;
@@ -159,6 +158,7 @@ $blueColor: #19818E;
         justify-content: space-evenly;
         margin: 10px;
         text-align: center;
+        width: 90%;
     }
     
     .address {
@@ -172,12 +172,12 @@ $blueColor: #19818E;
         color: $blueColor;
         margin-top: 20px;
 
-        h2 {
+        h1 {
             color: black;
             margin-bottom: 10px;
         }
 
-        h5 {
+        h2 {
             font-size: 18px;
         }
     }
@@ -196,17 +196,18 @@ $blueColor: #19818E;
         section {
             display: flex;
             justify-content: space-between;
-            width: 100%;            
+            width: 100%; 
+            padding: 0;           
         }
     
         div {
-            margin: 10px 0;
+            margin: 0;
             color: $blueColor;
             width: 100%;
         }
 
-        h5 {
-            font-size: 16px;
+        h2 {
+            font-size: 18px;
         }
     }
     
@@ -270,6 +271,10 @@ $blueColor: #19818E;
             font-size: 16px;
             margin: 0 auto;
             margin-bottom: 20px;
+        }
+
+        .special {
+            margin-left: 15px;
         }
     }
 }
