@@ -12,7 +12,8 @@ $blueColor: #19818E;
 
     h2 {
         text-align: center;
-        margin-top: 25px;
+        margin-top: 20px;
+        color: $blueColor;
     }
     img {
         width: 20%;
@@ -24,7 +25,7 @@ $blueColor: #19818E;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 10px 50px;
+    margin: 5px 50px;
     text-align: center;
 }
 
@@ -37,11 +38,11 @@ $blueColor: #19818E;
     border-radius: 5px;
     padding: 20px 30px;
     color: $blueColor;
-    margin-top: 25px;
+    margin-top: 20px;
 
     h2 {
         color: black;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 }
 
@@ -53,7 +54,7 @@ $blueColor: #19818E;
     border: 2px black solid;
     border-radius: 5px;
     padding: 10px 30px;
-    margin-top: 25px;
+    margin-top: 20px;
 
     section {
         display: flex;
@@ -78,7 +79,7 @@ $blueColor: #19818E;
     border: 2px black solid;
     border-radius: 5px;
     padding: 10px 30px;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-bottom: 20px;
 
     .input-box {

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import axios from 'axios'
 import { connect } from 'react-redux'
 import { updateFeedback } from '../../Redux/reducers/feedbackReducer'
-import userReducer, { logoutUser } from '../../Redux/reducers/userReducer'
+import { logoutUser } from '../../Redux/reducers/userReducer'
 import Testimonials from './Testimonials'
 import './Admin.scss'
 

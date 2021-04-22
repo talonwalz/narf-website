@@ -66,7 +66,7 @@ const Services = () => {
                 </ul>
             </section>
                 <br/>
-                <Pool />
+            <Pool />
            
         </main>
     )

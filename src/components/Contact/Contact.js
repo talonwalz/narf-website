@@ -1,10 +1,9 @@
-import React, {useState, useEffect } from 'react'
+import React, {useState } from 'react'
 import './Contact.scss'
 // import image from '../../images/logoIcon.png'
 import image from '../../images/logoIcon.png'
 
 import axios from 'axios'
-import Header from '../Header/Header'
 
 
 const Contact = () => {

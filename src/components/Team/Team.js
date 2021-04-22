@@ -8,7 +8,7 @@ import './Team.scss'
 const Team = () => {
     return (
         <main className="team-container">
-            <h2>Our Team</h2>
+            <h2>OUR TEAM</h2>
             <section className="person">
             <img classname="image1" src={tarrin} alt="Tarrin Walz"/>
             <article>

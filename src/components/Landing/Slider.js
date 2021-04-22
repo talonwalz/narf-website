@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick-theme.css";
 import tanner from '../../images/Narf/tanner.jpeg'
 import gym from '../../images/Narf/gym.jpeg'
 import pool from '../../images/Narf/pool.jpeg'
-import buildingImg from '../../images/building.jpg'
 import newBuilding from '../../images/BuildingWithSaying.jpg'
 import gymPic from '../../images/Narf/gymabove.jpeg'
 import React, {Component} from 'react'

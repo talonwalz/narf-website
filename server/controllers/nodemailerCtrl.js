@@ -39,7 +39,7 @@ module.exports = {
                     <h3>Tarrin Walz Owner</h3>
                     <h5>Northern Arizona Rehab & Fitness</h5>
                     `,
-                attachments: [
+                // attachments: [
                     // {
                     // filename: 'logoIcon.png',
                     // path: 'images',
@@ -49,7 +49,7 @@ module.exports = {
                     //     cid: 'unique@nodemailer.com', //same cid value as in the html img src
                     //     path: 'images'
                     // }
-                ]
+                // ]
 
             }, (err, res) => {
                 if (err) {
@@ -68,7 +68,7 @@ module.exports = {
         const { first, last, phone, message, email, subject } = req.body
         const ourEmail = 'ncdc5@yahoo.com'
 
-        const image = "https://images.unsplash.com/photo-1434596922112-19c563067271?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGh5c2ljYWwlMjB0aGVyYXB5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+        // const image = "https://images.unsplash.com/photo-1434596922112-19c563067271?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGh5c2ljYWwlMjB0aGVyYXB5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
 
         try {
             let transporter = nodemailer.createTransport({
@@ -83,15 +83,15 @@ module.exports = {
                 to: ourEmail,
                 subject: subject, 
                 text: message, 
-                html: `
-                
-                <img src=${image}/>
+                // <img src=${image}/>
+                html: `  
                     <h3>${first} ${last}</h3>
                     <h4>phone number: ${phone}</h4>
                     <h4>email: ${email}</h4>
                     <p>message: ${message}</p>
-                    // <img src="cid:walztalon.com"/>`,
-                attachments: [
+                    `,
+                    // <img src="cid:walztalon.com"/>
+                    // attachments: [
                     // {
                     // filename: 'license.txt',
                     // path: 'https://raw.github.com/nodemailer/nodemailer/master/LICENSE'
@@ -100,7 +100,7 @@ module.exports = {
                     //     cid: 'walztalon@gmail.com', 
                     //     path:image
                     // }
-                ]
+                // ]
 
             }, (err, res) => {
                 if (err) {

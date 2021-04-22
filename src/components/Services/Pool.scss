@@ -1,31 +1,88 @@
+$orangeColor: #E54817;
+$blueColor: #19818E;
 
 .pool-container {
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 70%;
 
-    .treatment-container {
+    .aquatic-therapy {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+        text-align: left;
+        padding: 20px 40px;
+        border: 2px black solid;
+        border-radius: 5px;
+
+        p {
+            font-size: 14px;
+            margin: 0 20px
+        }
 
         h3 {
             text-align: center;
             margin-bottom: 10px;
         }
-    }
 
-    .reasons-for-pool {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 30px;
-        // align-items: center;
-    }
+        .pool-benefits {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            margin: 10px 30px;
 
+            details {
+                cursor: pointer;
+                margin: 5px;
+
+            p {
+                font-size: 14px;
+                color: $blueColor;
+                width: 70%;
+                margin: 5px 30px;
+            }
+        }
+        }
+    }
     img {
-        width: 30%;
+        width: 40%;
         height: auto;
         margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .pool-container {
+
+        img {
+            width: 80%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .aquatic-therapy {
+            margin: 10px;
+            .pool-benefits {
+                margin: 0 10px;               
+            
+                details {
+                    margin: 10px 0;
+                    width: 100%;
+
+                    p {
+                        width: 100%;
+                        margin: 0;         
+                    }
+                }
+            }
+        }
     }
 }

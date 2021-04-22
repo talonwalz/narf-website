@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import image from '../../images/logoIcon.png'
 import { Link } from 'react-router-dom'
 import Nav from './Nav'
