@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const massive = require('massive');
+const path = require('path')
 
 const session = require('express-session');
 
@@ -48,6 +49,12 @@ app.delete('/api/request-info/:question_id', requestCtrl.deleteRequest); //endpo
 // NodeMailer Endpoint
 app.post('/api/email-from-us',emailCtrl.emailFromUs); //endpoint checked :)
 app.post('/api/email-us',emailCtrl.emailUs); //endpoint checked :)
+
+// STEP 2 & 3
+app.use(express.static(__dirname + '/../build'))
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build/index.html'))
+})
 
 
 massive({
