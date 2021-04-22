@@ -20,10 +20,9 @@ import './Services.scss'
 const Services = () => {
     return (
         <main className="services-container">
-            <h2>What We Treat</h2>
+            <h1>What We Treat</h1>
                 <br />
-            <section className="symptoms-container">
-                
+            <section className="symptoms-container"> 
                 <ul>
                     <li>Sciatica and Back Pain Relief</li>
                     <li>Neck Pain Relief</li>
@@ -43,9 +42,8 @@ const Services = () => {
                 </ul>
 
             </section>
-            <h2>Treatments</h2>
+            <h1>Treatments</h1>
             <section className="treatment-container">
-                
                 <ul>
                     <li>Physical Therapy Evaluation and Intervention</li>
                     <li>Aquatic Therapy</li>

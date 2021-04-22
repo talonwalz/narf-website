@@ -26,7 +26,7 @@ const SuccessStories = (props) => {
 
     return (
         <section className="success-container">
-            <h2>Testimonials</h2>
+            <h1>Testimonials</h1>
 
             <div>
                 

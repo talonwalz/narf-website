@@ -23,13 +23,14 @@ $blueColor: #19818E;
         border-radius: 5px;
 
         p {
-            font-size: 14px;
+            font-size: 18px;
             margin: 0 20px
         }
 
-        h3 {
+        h2 {
             text-align: center;
             margin-bottom: 10px;
+            color: $blueColor;
         }
 
         .pool-benefits {
@@ -42,9 +43,10 @@ $blueColor: #19818E;
             details {
                 cursor: pointer;
                 margin: 5px;
+                font-size: 20px;
 
             p {
-                font-size: 14px;
+                font-size: 18px;
                 color: $blueColor;
                 width: 70%;
                 margin: 5px 30px;

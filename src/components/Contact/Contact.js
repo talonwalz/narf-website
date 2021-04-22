@@ -57,37 +57,37 @@ const Contact = () => {
             {/* <h2>Contact Us</h2> */}
             {/* <img src={image} alt="narf logo"/> */}
             <section className="contact-container">
-            <h2>Contact Us</h2>
+            <h1>Contact Us</h1>
             <article className="address">    
-                <h5>Phone #: (928) 649-9726</h5>
-                <h5>Fax #: (928) 634-2079</h5>
-                <h5>480 S. Willard St.</h5>
-                <h5>Cottonwood, AZ 86326</h5>
+                <h2>Phone #: (928) 649-9726</h2>
+                <h2>Fax #: (928) 634-2079</h2>
+                <h2>480 S. Willard St.</h2>
+                <h2>Cottonwood, AZ 86326</h2>
             </article>
-            <h2>Hours</h2>
+            <h1>Hours</h1>
             <article className="hours">
                 <section>
                     <div>
-                        <h5>Monday</h5>
-                        <h5>Tuesday</h5>
-                        <h5>Wednesday</h5>
-                        <h5>Thursday</h5>
-                        <h5>Friday</h5>
-                        <h5>Saturday</h5>
-                        <h5>sunday</h5>
+                        <h2>Monday</h2>
+                        <h2>Tuesday</h2>
+                        <h2>Wednesday</h2>
+                        <h2>Thursday</h2>
+                        <h2>Friday</h2>
+                        <h2>Saturday</h2>
+                        <h2>sunday</h2>
                     </div>
                     <div>
-                        <h5>closed</h5>
-                        <h5>7:00 AM - 6:00 PM</h5>
-                        <h5>7:00 AM - 6:00 PM</h5>
-                        <h5>7:00 AM - 6:00 PM</h5>
-                        <h5>7:00 AM - 6:00 PM</h5>
-                        <h5>closed</h5>
-                        <h5>closed</h5>
+                        <h2>closed</h2>
+                        <h2>7:00 AM - 6:00 PM</h2>
+                        <h2>7:00 AM - 6:00 PM</h2>
+                        <h2>7:00 AM - 6:00 PM</h2>
+                        <h2>7:00 AM - 6:00 PM</h2>
+                        <h2>closed</h2>
+                        <h2>closed</h2>
                     </div>
                 </section>
             </article>
-            <h2>Request an Appointment</h2>
+            <h1>Request an Appointment</h1>
             <form className="request-info">   
                 <div className="input-box">
                     <div className="inputs">
@@ -111,7 +111,7 @@ const Contact = () => {
                     </div>
                     <input  type="hidden" placeholder="date" value={date} onChange={e=>setDate(e.target.value)} required/>
                 </div> 
-                <div className="inputs">
+                <div className="inputs special">
                     <label>Subject:</label>
                     <input type="text" placeholder="request apt" value={subject} onChange={e=>setSubject(e.target.value)} required/>
                 </div>   

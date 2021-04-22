@@ -10,7 +10,7 @@ $blueColor: #19818E;
     position: relative;
     z-index: -2;
 
-    h2 {
+    h1 {
         text-align: center;
         margin-top: 20px;
         color: $blueColor;
@@ -27,6 +27,7 @@ $blueColor: #19818E;
     justify-content: space-evenly;
     margin: 5px 50px;
     text-align: center;
+    width: 60%;
 }
 
 .address {
@@ -36,11 +37,12 @@ $blueColor: #19818E;
     justify-content: space-evenly;
     border: 2px black solid;
     border-radius: 5px;
-    padding: 20px 30px;
+    padding: 40px 30px;
     color: $blueColor;
     margin-top: 20px;
+    width: 100%;
 
-    h2 {
+    h1 {
         color: black;
         margin-bottom: 20px;
     }
@@ -53,21 +55,19 @@ $blueColor: #19818E;
     justify-content: space-evenly;
     border: 2px black solid;
     border-radius: 5px;
-    padding: 10px 30px;
+    padding: 40px 30px;
     margin-top: 20px;
 
     section {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
-        padding: 0 30px;
-        
+        padding: 0 80px;        
     }
 
     div {
         margin: 10px;
         color: $blueColor
-
     }
 }
 
@@ -84,7 +84,7 @@ $blueColor: #19818E;
 
     .input-box {
         display: flex;
-        
+        margin: 0 auto;
     }
 
     h2 {
@@ -95,19 +95,27 @@ $blueColor: #19818E;
 
     label {
         margin-top: 10px;
-        font-size: 12px;
+        font-size: 20px;
         font-weight: bold;
         // color: $blueColor;
     }
 
     input {
-        margin-right: 10px;
+        margin-right: 30px;
+        // margin-left: 10px;
+        width: 350px;
+        height: 50px;
+        font-size: 20px;
+        padding-left: 20px;
     }
 
     textarea {
-        margin-bottom: 10px;
-        margin-right: 10px;
-        height: 80px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        height: 80px; 
+        font-size: 20px;
+        padding: 5px 20px;
     }
 
     .inputs {
@@ -115,6 +123,16 @@ $blueColor: #19818E;
         flex-direction: column;
         text-align: left;
         width: 100%;
+    }
+
+    .special {
+        margin-left: 20px;
+    }
+
+    button {
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-left: 20px;
     }
 
 }

@@ -26,7 +26,7 @@ $blueColor: #19818E;
         display: flex;
         flex-direction: column;
         list-style: none;
-        font-size: 10px;
+        font-size: 18px;
         width: 30%;
         align-items: center;
         justify-content: space-between;
@@ -51,7 +51,7 @@ $blueColor: #19818E;
     }
 
     .middle {
-        font-size: 13px;
+        font-size: 23px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -92,6 +92,8 @@ $blueColor: #19818E;
         .google {
             color: blue;
             transition: 1s ease-in-out;
+            height: 60px;
+            width: auto;
 
             &:hover {
                 transform: rotate(360deg);
@@ -99,7 +101,7 @@ $blueColor: #19818E;
         }
 
         .fb {
-            height: 30px;
+            height: 60px;
             width: auto;
             transition: 1s ease-in-out;
 

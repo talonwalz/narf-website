@@ -11,10 +11,10 @@ const Pool = () => {
         //     <h3>Benefits</h3>
         // </section>
         <main className="pool-container">
-            <h2>Aquatic Therapy</h2>
+            <h1>Aquatic Therapy</h1>
             <img src={poolImg} alt="pool"/>
             <section className="aquatic-therapy">
-                <h3>Benefits</h3>
+                <h2>Benefits</h2>
                 <p>Aquatic Therapy is provided by our physical therapy staff in our multi-depth, therapeutic pool at Northern Arizona Rehabilitation & Fitness. It is offered as a modality in conjunction with land based therapy or by itself as the primary therapy if appropriate. Individuals can access the pool either by stairs or a hydraulic lift that uses a chair or stretcher. Depths range from 4 to 6 feet.</p>              
                 <div className="pool-benefits">
                 <details>

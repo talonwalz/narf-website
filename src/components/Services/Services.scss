@@ -12,14 +12,14 @@ $blueColor: #19818E;
     position: relative;
     z-index: -2;
     
-    h2 {
+    h1 {
         color: $blueColor
     }
 }
 
 .symptoms-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
     width: 70%;
@@ -31,6 +31,7 @@ $blueColor: #19818E;
 
     li {
         padding: 3px;
+        font-size: 20px;
     }
 
     img {
@@ -58,7 +59,7 @@ $blueColor: #19818E;
 .treatment-container {
     margin: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
     width: 70%;
@@ -69,6 +70,7 @@ $blueColor: #19818E;
 
     li {
         padding: 3px;
+        font-size: 20px;
     }
 }
 

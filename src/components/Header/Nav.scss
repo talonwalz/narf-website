@@ -3,7 +3,7 @@ $blueColor: #19818E;
 
 .nav-container {
     width: 100%;
-    height: 30px;
+    height: 50px;
     background-color: rgb(82, 79, 79);
     display: flex;
     border-top: 2px black solid;
@@ -16,7 +16,7 @@ $blueColor: #19818E;
     ul {
         display: flex;
         list-style: none;
-        font-size: 12px;
+        font-size: 18px;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
@@ -27,17 +27,17 @@ $blueColor: #19818E;
             color: white;
             transition: .5s;
             border-radius: 5px;
-            width: 130px;
+            width: 190px;
             text-align: center;
             margin: auto 5px;
             border: 2px transparent solid;
-
+            // padding: 0;
         }
 
         li:hover {
             background-color: $blueColor;
             border: 2px black solid;
-            padding: 4px 10px;
+            padding: 4px 0;
         }
     }
 }

@@ -28,7 +28,7 @@ $blueColor: #19818E;
     }
 
     .middle {
-        font-size: 16px;
+        font-size: 22px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -59,16 +59,16 @@ $blueColor: #19818E;
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
-            font-size: 10px;
+            
     
             button {
-                width: 150px;
-                height: 20px;
-                margin-top: 5px;
+                width: 200px;
+                height: 30px;
+                margin-top: 10px;
                 border-radius: 5px;
                 border: 2px black solid;
                 cursor: pointer;
-            
+                font-size: 18px;
             }
             .btn1 {
                 animation: slideLeft ease-in 1s;

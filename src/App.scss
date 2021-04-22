@@ -19,8 +19,8 @@ $blueColor: #19818E;
 
 
 .mainBtn {
-  width: 110px;
-  height: 20px;
+  width: 200px;
+  height: 30px;
   border-color: black;
   border-radius: 5px;
   color: black;
@@ -170,4 +170,8 @@ $blueColor: #19818E;
   100% {
       transform: translateY();
   }
+}
+
+h1 {
+  font-size: 40px;
 }

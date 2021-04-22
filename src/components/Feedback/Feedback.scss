@@ -13,7 +13,7 @@ $blueColor: #19818E;
     position: relative;
     z-index: -2;
 
-    h2 {
+    h1 {
         color: $blueColor
     }
 
@@ -25,14 +25,19 @@ $blueColor: #19818E;
         margin-top: 10px;
         
         input {
-            width: 200px;
-            height: 25px;
+            width: 300px;
+            height: 40px;
             margin: 10px;
+            font-size: 18px;
+            padding-left: 20px;
         }
 
         textarea {
-            width: 420px;
-            height: 100px;
+            margin-top: 10px;
+            width: 620px;
+            height: 200px;
+            font-size: 18px;
+            padding: 20px;
         }
 
         .btn-div {
@@ -44,10 +49,11 @@ $blueColor: #19818E;
 
         button {
             margin-top: 15px;
+            font-size: 18px;
         }
 
         img {
-            height: 100px;
+            height: 150px;
             width: auto;
         }
     }

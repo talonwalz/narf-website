@@ -28,7 +28,7 @@ const Feedback = (props) => {
 
     return (
         <section className="feedback-container">
-            <h2>What Can We Do Better?</h2>
+            <h1>What Can We Do Better?</h1>
             <main >
                 <div>
                     <input value={first} onChange={e => setFirst(e.target.value)} placeholder="first name" />

@@ -19,7 +19,7 @@ $blueColor: #19818E;
 
     }
 
-    h2 {
+    h1 {
         color: $blueColor;
         margin-bottom: 20px;
         // animation: slideIn ease-in 1s;
@@ -27,6 +27,7 @@ $blueColor: #19818E;
 
     p {
         margin: 0 10%;
+        font-size: 20px;
     }
 
     img {
@@ -42,6 +43,7 @@ $blueColor: #19818E;
 
         button {
             cursor: pointer;
+            font-size: 18px;
         }
         
         .one {
