@@ -108,8 +108,14 @@ $blueColor: #19818E;
   height: 120%;
 }
 
+h1 {
+  font-size: 40px;
+}
 
 @media (max-width: 450px) {
+  h1 {
+    font-size: 30px;
+  }
   .mainBtn {
       transition: none;
       height: 40px;
@@ -172,6 +178,3 @@ $blueColor: #19818E;
   }
 }
 
-h1 {
-  font-size: 40px;
-}
