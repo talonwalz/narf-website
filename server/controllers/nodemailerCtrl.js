@@ -26,7 +26,7 @@ module.exports = {
                     user: EMAIL,
                     pass: PASSWORD
                 }
-            });
+            }) ;
             //invoke the sendMail function with the info in the email
 
             let info = await transporter.sendMail({
@@ -35,9 +35,9 @@ module.exports = {
                 subject: title, //This will show on the subject of the email
                 text: message, //for clients with plaintext support only
                 html: `  
-                    <p>${message}</p>                    
-                    <h3>Tarrin Walz Owner</h3>
-                    <h5>Northern Arizona Rehab & Fitness</h5>
+                    <p style="font-size: 16px;" >${message}</p>                    
+                    <h2 style="font-family: serif; color: black;" >Tarrin Walz Owner</h2>
+                    <h2 style="color: #19818E; font-family: cursive; font-weight: bold; " >Northern Arizona Rehabilitation & Fitness</h2>
                     `,
                 // attachments: [
                     // {

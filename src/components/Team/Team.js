@@ -23,9 +23,9 @@ const Team = () => {
             </article>    
             </section>
             <section className="person">
-            <img src={dan2} alt="Dan Sorenson"/>
+            <img src={dan2} alt="Dan Sorensen"/>
             <article>
-                <h2>Dan Sorenson, PT, MPT</h2>
+                <h2>Dan Sorensen, PT, MPT</h2>
                 <br/>
                 <p>Dan graduated with his Master's degree in physical therapy in 2003 and has been working at Northern Arizona Rehabilitation & Fitness since then. Dan is an Arizona native who grew up in the Phoenix area. He went to school in Utah and Texas, but came back to Arizona to enjoy the great weather and be close to family. He is happily married to a beautiful wife and has five children who keep him entertained and busy. Some of his hobbies and interests are exercising, reading, hunting, Formula 1 racing, and spending time with his family. He has taken multiple courses in treatment for sports injuries, osteoarthritis, and strength/conditioning.
                 </p>

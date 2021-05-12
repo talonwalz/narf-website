@@ -24,21 +24,22 @@ const Services = () => {
                 <br />
             <section className="symptoms-container"> 
                 <ul>
-                    <li>Sciatica and Back Pain Relief</li>
-                    <li>Neck Pain Relief</li>
-                    <li>Shoulder Pain Relief</li>
-                    <li>Hip and Knee Pain Relief</li>
-                    <li>Elbow, Wrist, and Hand Relief</li>
-                    <li>Foot and Ankle Pain Relief</li>
+                    <li>Sciatica and Back Pain</li>
+                    <li>Neck Pain</li>
+                    <li>Shoulder Pain</li>
+                    <li>Hip and Knee Pain</li>
+                    <li>Elbow, Wrist, and Hand Pain</li>
+                    <li>Foot and Ankle Pain</li>
+                    <li>Dizziness and Balance Impairments</li>
                 </ul>
                 <ul>
                     <li>Balance and Gate Disorders</li>
-                    <li>Arthritis Pain Relief</li>
-                    <li>Chronic Pain Relief</li>
-                    <li>Fibromyalgia</li>
-                    <li>Post-Surgical Rehab</li>
+                    <li>Arthritis Pain</li>
+                    <li>Chronic Pain</li>
+                    <li>Fibromyalgia</li>                  
                     <li>Sports Injury</li>
                     <li>Work Injury</li>
+                    <li>General Weakness</li>
                 </ul>
 
             </section>
@@ -52,6 +53,7 @@ const Services = () => {
                     <li>Sport Specific Training</li>
                     <li>Individualized Fitness Programs</li>
                     <li>Community Wellness</li>
+                    <li>Balance Training and Fall Prevention</li>
                 </ul>
                 <ul>
                     <li>Therapeutic Ultrasound</li>
@@ -61,6 +63,7 @@ const Services = () => {
                     <li>Laser Light Therapy</li>
                     <li>Therapeutic Exercise</li>
                     <li>Iontophoresis</li>
+                    <li>Post-Surgical Rehab</li>
                 </ul>
             </section>
                 <br/>
