@@ -61,6 +61,191 @@ $blueColor: #19818E;
     }
 }
 
+@media (max-width: 1200px) {
+    .pool-container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+    
+        .aquatic-therapy {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            flex-wrap: wrap;
+            text-align: left;
+            padding: 20px 40px;
+            border: 2px black solid;
+            border-radius: 5px;
+    
+            p {
+                font-size: 18px;
+                margin: 0 20px
+            }
+    
+            h2 {
+                text-align: center;
+                margin-bottom: 10px;
+                color: $blueColor;
+            }
+    
+            .pool-benefits {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                margin: 10px 30px;
+    
+                details {
+                    cursor: pointer;
+                    margin: 5px;
+                    font-size: 20px;
+    
+                p {
+                    font-size: 18px;
+                    color: $blueColor;
+                    width: 70%;
+                    margin: 5px 30px;
+                }
+            }
+            }
+        }
+        img {
+            width: 40%;
+            height: auto;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (max-width: 945px) {
+    .pool-container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    
+        .aquatic-therapy {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            flex-wrap: wrap;
+            text-align: left;
+            padding: 20px 40px;
+            border: 2px black solid;
+            border-radius: 5px;
+    
+            p {
+                font-size: 18px;
+                margin: 0 20px
+            }
+    
+            h2 {
+                text-align: center;
+                margin-bottom: 10px;
+                color: $blueColor;
+            }
+    
+            .pool-benefits {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                margin: 10px 30px;
+    
+                details {
+                    cursor: pointer;
+                    margin: 5px;
+                    font-size: 20px;
+    
+                p {
+                    font-size: 18px;
+                    color: $blueColor;
+                    width: 70%;
+                    margin: 5px 30px;
+                }
+            }
+            }
+        }
+        img {
+            width: 40%;
+            height: auto;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .pool-container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+    
+        .aquatic-therapy {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            flex-wrap: wrap;
+            text-align: left;
+            padding: 20px 40px;
+            border: 2px black solid;
+            border-radius: 5px;
+    
+            p {
+                font-size: 18px;
+                margin: 0 20px
+            }
+    
+            h2 {
+                text-align: center;
+                margin-bottom: 10px;
+                color: $blueColor;
+            }
+    
+            .pool-benefits {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                margin: 10px 30px;
+    
+                details {
+                    cursor: pointer;
+                    margin: 5px;
+                    font-size: 20px;
+    
+                p {
+                    font-size: 18px;
+                    color: $blueColor;
+                    width: 90%;
+                    margin: 5px 30px;
+                }
+            }
+            }
+        }
+        img {
+            width: 60%;
+            height: auto;
+            margin-top: 10px;
+        }
+    }
+}
 
 @media (max-width: 450px) {
     .pool-container {
