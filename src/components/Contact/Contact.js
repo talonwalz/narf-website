@@ -91,11 +91,11 @@ const Contact = () => {
             <section className="request-info">   
                 <div className="input-box">
                     <div className="inputs">
-                    <label for="fname">First: </label>
+                    <label >First: </label>
                     <input id="fname" placeholder="first name" value={first}onChange={e => setFirst(e.target.value)} required/>
                     </div>
                     <div className="inputs">
-                    <label for="lname">Last: </label>
+                    <label >Last: </label>
                     <input id="lname" placeholder="last name" value={last} onChange={e => setLast(e.target.value)} required/>
                     </div>
                 </div>
