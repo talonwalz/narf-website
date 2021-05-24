@@ -88,7 +88,7 @@ const Contact = () => {
                 </section>
             </article>
             <h1>Request an Appointment</h1>
-            <form className="request-info">   
+            <section className="request-info">   
                 <div className="input-box">
                     <div className="inputs">
                     <label for="fname">First: </label>
@@ -120,7 +120,7 @@ const Contact = () => {
                 <textarea placeholder="ask any specific questions..." value={message} onChange={e => setMessage(e.target.value)} required/>
                 </div> 
                 <button className="mainBtn" onClick={addRequest}>Submit</button>
-            </form>
+            </section>
             </section>
         </main>
     )
