@@ -37,7 +37,7 @@ const Team = () => {
             <section className="person">
             <img src={dawn} alt="Dawn Rossi"/>
             <article >
-                <h2>Dawn Rossi PTA</h2>
+                <h2>Dawn Rossi, PTA</h2>
                 <br/>
                 <p>Dawn is from Anchorage Alaska.  She graduated from NAU in 1992 with degree in Psychology and received her Physical Therapist Assistant training at Green River Community College in 2000.  Dawn has been a PTA for 18 years working in many different settings, including in-patient, out-patient, acute care, skilled nursing and home health. Outpatient PT is her favorite setting.  She specializes in aquatic training and myofascial release techniques (MFR).  She decided to leave the travelling therapist world and joined team NARF in 2018 and has been helping people get their lives back ever since.</p>
             </article>   
