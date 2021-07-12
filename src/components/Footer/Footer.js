@@ -4,7 +4,7 @@ import image from '../../images/logoIcon.png'
 import { Link } from 'react-router-dom'
 import './Footer.scss'
 
-const googleReview = `https://www.google.com/search?q=northern+arizona+rehab+and+fitness&rlz=1C5CHFA_enUS939US939&sxsrf=ALeKk01GrOB8Kt4JBAPwqzUz-jI3EGUq2A%3A1618265615150&ei=D8Z0YJDFCMmUtAbi0rTABA&oq=norther&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzIFCAAQkQIyBQguEJECMgoILhCHAhCxAxAUMgUIABCRAjIFCAAQkQIyBQguEJECMgUIABCxAzIFCAAQsQMyDQguEIcCEMcBEK8BEBQ6BwgjELADECc6BwgAEEcQsAM6EAguEMcBEKMCELADEMgDEEM6CgguELADEMgDEENKBQg4EgExUKMJWKMJYLUQaAFwAngAgAGPAYgBjQKSAQMwLjKYAQCgAQGqAQdnd3Mtd2l6yAEPwAEB&sclient=gws-wiz#lrd=0x872d0ff2380e2769:0xba632fdc16ac17d8,1,,,`
+const googleReview = `https://www.google.com/search?q=noraz+rehab&rlz=1C5CHFA_enUS939US939&oq=nor&aqs=chrome.1.69i60j69i59l2j69i57j0i67j46i199i291i433j46i67j46i199i291i433.2071j0j7&sourceid=chrome&ie=UTF-8`
 
 const Footer = () => {
     return (
